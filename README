@@ -2,6 +2,13 @@ consonance v0.4 [https://sourceforge.net/projects/consonance]
 
 A lightweight music manager.
 
+This is forked of Consonance designed by Arch User sacamano_m82 know in the Arch Forums
+
+Fixes done
+-----------
+i)	Code modification to support newer libnotify for notification
+ii)	Added pulse backend apart from existing alsa/oss backend
+
 Installation Procedure:
 -----------------------
 
