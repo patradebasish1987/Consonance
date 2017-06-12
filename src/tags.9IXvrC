@@ -1,0 +1,1207 @@
+cmd_version	cmdline.c	/^gboolean cmd_version(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_play	cmdline.c	/^gboolean cmd_play(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_stop	cmdline.c	/^gboolean cmd_stop(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_pause	cmdline.c	/^gboolean cmd_pause(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_prev	cmdline.c	/^gboolean cmd_prev(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_next	cmdline.c	/^gboolean cmd_next(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_inc_volume	cmdline.c	/^gboolean cmd_inc_volume(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_dec_volume	cmdline.c	/^gboolean cmd_dec_volume(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_show_osd	cmdline.c	/^gboolean cmd_show_osd(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_current_state	cmdline.c	/^gboolean cmd_current_state(const gchar *opt_name, const gchar *val,$/;"	f
+cmd_add_file	cmdline.c	/^gboolean cmd_add_file(const gchar *opt_name, const gchar *val,$/;"	f
+show_osd	statusicon.c	/^void show_osd(struct con_win *cwin)$/;"	f
+status_icon_tooltip_update	statusicon.c	/^void status_icon_tooltip_update(struct con_win *cwin)$/;"	f
+unset_status_icon_tooltip	statusicon.c	/^void unset_status_icon_tooltip(struct con_win *cwin)$/;"	f
+status_icon_activate	statusicon.c	/^void status_icon_activate(GtkStatusIcon *status_icon, struct con_win *cwin)$/;"	f
+status_icon_popup_menu	statusicon.c	/^void status_icon_popup_menu(GtkStatusIcon *status_icon,$/;"	f
+systray_play	statusicon.c	/^void systray_play(GtkAction *action, struct con_win *cwin)$/;"	f
+systray_stop	statusicon.c	/^void systray_stop(GtkAction *action, struct con_win *cwin)$/;"	f
+systray_pause	statusicon.c	/^void systray_pause(GtkAction *action, struct con_win *cwin)$/;"	f
+systray_prev	statusicon.c	/^void systray_prev(GtkAction *action, struct con_win *cwin)$/;"	f
+systray_next	statusicon.c	/^void systray_next(GtkAction *action, struct con_win *cwin)$/;"	f
+systray_quit	statusicon.c	/^void systray_quit(GtkAction *action, struct con_win *cwin)$/;"	f
+dbus_play_handler	dbus.c	/^static void dbus_play_handler(struct con_win *cwin)$/;"	f	file:
+dbus_stop_handler	dbus.c	/^static void dbus_stop_handler(struct con_win *cwin)$/;"	f	file:
+dbus_pause_handler	dbus.c	/^static void dbus_pause_handler(struct con_win *cwin)$/;"	f	file:
+dbus_next_handler	dbus.c	/^static void dbus_next_handler(struct con_win *cwin)$/;"	f	file:
+dbus_prev_handler	dbus.c	/^static void dbus_prev_handler(struct con_win *cwin)$/;"	f	file:
+dbus_inc_vol_handler	dbus.c	/^static void dbus_inc_vol_handler(struct con_win *cwin)$/;"	f	file:
+dbus_dec_vol_handler	dbus.c	/^static void dbus_dec_vol_handler(struct con_win *cwin)$/;"	f	file:
+dbus_show_osd_handler	dbus.c	/^static void dbus_show_osd_handler(struct con_win *cwin)$/;"	f	file:
+dbus_add_file	dbus.c	/^static void dbus_add_file(DBusMessage *msg, struct con_win *cwin)$/;"	f	file:
+dbus_current_state	dbus.c	/^static void dbus_current_state(DBusMessage *msg, struct con_win *cwin)$/;"	f	file:
+dbus_filter_handler	dbus.c	/^DBusHandlerResult dbus_filter_handler(DBusConnection *conn,$/;"	f
+dbus_send_signal	dbus.c	/^void dbus_send_signal(const gchar *signal, struct con_win *cwin)$/;"	f
+update_gui	playback_wav.c	/^static void update_gui(gint played,$/;"	f	file:
+sndfile_seek	playback_wav.c	/^static gint sndfile_seek(struct con_wav_decoder *wdec, struct con_win *cwin)$/;"	f	file:
+sndfile_decode	playback_wav.c	/^static gint sndfile_decode(struct con_wav_decoder *wdec, struct con_win *cwin)$/;"	f	file:
+play_wav	playback_wav.c	/^void play_wav(struct con_win *cwin)$/;"	f
+switch_cb_id	gui.c	/^gulong switch_cb_id;$/;"	v
+main_menu_xml	gui.c	/^gchar *main_menu_xml = "<ui>					\\$/;"	v
+cp_context_menu_xml	gui.c	/^gchar *cp_context_menu_xml = "<ui>		    		\\$/;"	v
+playlist_tree_context_menu_xml	gui.c	/^gchar *playlist_tree_context_menu_xml = "<ui>	\\$/;"	v
+library_tree_context_menu_xml	gui.c	/^gchar *library_tree_context_menu_xml = "<ui>		\\$/;"	v
+file_tree_dir_context_menu_xml	gui.c	/^gchar *file_tree_dir_context_menu_xml = "<ui>		\\$/;"	v
+file_tree_file_context_menu_xml	gui.c	/^gchar *file_tree_file_context_menu_xml = "<ui>		\\$/;"	v
+library_page_context_menu_xml	gui.c	/^gchar *library_page_context_menu_xml = "<ui>		\\$/;"	v
+systray_menu_xml	gui.c	/^gchar *systray_menu_xml = "<ui>		\\$/;"	v
+main_aentries	gui.c	/^GtkActionEntry main_aentries[] = {$/;"	v
+cp_context_aentries	gui.c	/^GtkActionEntry cp_context_aentries[] = {$/;"	v
+playlist_tree_context_aentries	gui.c	/^GtkActionEntry playlist_tree_context_aentries[] = {$/;"	v
+library_tree_context_aentries	gui.c	/^GtkActionEntry library_tree_context_aentries[] = {$/;"	v
+file_tree_dir_context_aentries	gui.c	/^GtkActionEntry file_tree_dir_context_aentries[] = {$/;"	v
+file_tree_file_context_aentries	gui.c	/^GtkActionEntry file_tree_file_context_aentries[] = {$/;"	v
+library_page_context_aentries	gui.c	/^GtkActionEntry library_page_context_aentries[] = {$/;"	v
+systray_menu_aentries	gui.c	/^GtkActionEntry systray_menu_aentries[] = {$/;"	v
+tentries	gui.c	/^GtkTargetEntry tentries[] = {$/;"	v
+create_library_tree_context_menu	gui.c	/^static GtkUIManager* create_library_tree_context_menu(GtkWidget *library_tree,$/;"	f	file:
+create_library_tree	gui.c	/^static GtkWidget* create_library_tree(struct con_win *cwin)$/;"	f	file:
+create_file_tree_dir_context_menu	gui.c	/^static GtkUIManager* create_file_tree_dir_context_menu(GtkWidget *file_tree,$/;"	f	file:
+create_file_tree_file_context_menu	gui.c	/^static GtkUIManager* create_file_tree_file_context_menu(GtkWidget *file_tree,$/;"	f	file:
+create_file_tree	gui.c	/^static GtkWidget* create_file_tree(struct con_win *cwin)$/;"	f	file:
+create_playlist_tree_context_menu	gui.c	/^static GtkUIManager* create_playlist_tree_context_menu(GtkWidget *playlist_tree,$/;"	f	file:
+create_playlist_tree	gui.c	/^static GtkWidget* create_playlist_tree(struct con_win *cwin)$/;"	f	file:
+create_library_page_context_menu	gui.c	/^static GtkUIManager* create_library_page_context_menu(GtkWidget *library_page,$/;"	f	file:
+create_browse_mode_view	gui.c	/^static GtkWidget* create_browse_mode_view(struct con_win *cwin)$/;"	f	file:
+create_header_context_menu	gui.c	/^static GtkWidget* create_header_context_menu(struct con_win *cwin)$/;"	f	file:
+create_cp_context_menu	gui.c	/^static GtkUIManager* create_cp_context_menu(GtkWidget *current_playlist,$/;"	f	file:
+create_current_playlist_columns	gui.c	/^static void create_current_playlist_columns(GtkWidget *current_playlist,$/;"	f	file:
+create_current_playlist_view	gui.c	/^static GtkWidget* create_current_playlist_view(struct con_win *cwin)$/;"	f	file:
+init_dnd	gui.c	/^static void init_dnd(struct con_win *cwin)$/;"	f	file:
+create_systray_menu	gui.c	/^static GtkUIManager* create_systray_menu(struct con_win *cwin)$/;"	f	file:
+create_menu	gui.c	/^GtkUIManager* create_menu(struct con_win *cwin)$/;"	f
+create_main_region	gui.c	/^GtkWidget* create_main_region(struct con_win *cwin)$/;"	f
+create_panel	gui.c	/^GtkWidget* create_panel(struct con_win *cwin)$/;"	f
+create_status_bar	gui.c	/^GtkWidget* create_status_bar(struct con_win *cwin)$/;"	f
+create_search_bar	gui.c	/^GtkWidget* create_search_bar(struct con_win *cwin)$/;"	f
+create_status_icon	gui.c	/^void create_status_icon(struct con_win *cwin)$/;"	f
+exit_gui	gui.c	/^gboolean exit_gui(GtkWidget *widget, GdkEvent *event, struct con_win *cwin)$/;"	f
+MOD_H	mod.h	19;"	d
+MODBUF_LEN	mod.h	25;"	d
+con_modplug_decoder	mod.h	/^struct con_modplug_decoder {$/;"	s
+buf	mod.h	/^	gchar buf[MODBUF_LEN];$/;"	m	struct:con_modplug_decoder
+data	mod.h	/^	gchar *data;$/;"	m	struct:con_modplug_decoder
+length	mod.h	/^	gsize length;$/;"	m	struct:con_modplug_decoder
+timeval	mod.h	/^	GTimeVal timeval;$/;"	m	struct:con_modplug_decoder
+mf	mod.h	/^	ModPlugFile *mf;$/;"	m	struct:con_modplug_decoder
+play_modplug	mod.h	/^void play_modplug(struct con_win *cwin);$/;"	p
+play_thread_wav	threads.c	/^static gpointer play_thread_wav(gpointer data)$/;"	f	file:
+play_thread_mp3	threads.c	/^static gpointer play_thread_mp3(gpointer data)$/;"	f	file:
+play_thread_flac	threads.c	/^static gpointer play_thread_flac(gpointer data)$/;"	f	file:
+play_thread_oggvorbis	threads.c	/^static gpointer play_thread_oggvorbis(gpointer data)$/;"	f	file:
+play_thread_modplug	threads.c	/^static gpointer play_thread_modplug(gpointer data)$/;"	f	file:
+advance_playback	threads.c	/^gboolean advance_playback(gpointer data)$/;"	f
+update_track_progress_bar	threads.c	/^gboolean update_track_progress_bar(gpointer data)$/;"	f
+update_current_song_info	threads.c	/^gboolean update_current_song_info(gpointer data)$/;"	f
+start_playback	threads.c	/^GThread* start_playback(struct musicobject *mobj, struct con_win *cwin)$/;"	f
+pause_playback	threads.c	/^void pause_playback(struct con_win *cwin)$/;"	f
+resume_playback	threads.c	/^void resume_playback(struct con_win *cwin)$/;"	f
+stop_playback	threads.c	/^void stop_playback(struct con_win *cwin)$/;"	f
+seek_playback	threads.c	/^void seek_playback(struct con_win *cwin, gint seek, gdouble fraction)$/;"	f
+process_thread_command	threads.c	/^gint process_thread_command(struct con_win *cwin)$/;"	f
+MP3_H	mp3.h	19;"	d
+IN_BUF_LEN	mp3.h	23;"	d
+OUT_BUF_LEN	mp3.h	24;"	d
+CBR	mp3.h	/^	CBR,$/;"	e	enum:__anon1
+VBR	mp3.h	/^	VBR$/;"	e	enum:__anon1
+con_win	mp3.h	/^struct con_win;$/;"	x
+con_mad_decoder	mp3.h	/^struct con_mad_decoder {$/;"	s
+fd	mp3.h	/^	gint fd;			\/* File Descriptor of the currently playing track *\/$/;"	m	struct:con_mad_decoder
+no_samples	mp3.h	/^	gint no_samples;		\/* Number of samples in a frame *\/$/;"	m	struct:con_mad_decoder
+vbr_seek_pos	mp3.h	/^	gint vbr_seek_pos;		\/* Current umber of elements in any of the vbr_* arrays *\/$/;"	m	struct:con_mad_decoder
+mp3_type	mp3.h	/^	gint mp3_type;			\/* CBR \/ VBR *\/$/;"	m	struct:con_mad_decoder
+in_buf	mp3.h	/^	guchar in_buf[IN_BUF_LEN];	\/* i\/p buffer *\/$/;"	m	struct:con_mad_decoder
+out_buf	mp3.h	/^	guchar out_buf[OUT_BUF_LEN];	\/* o\/p buffer *\/$/;"	m	struct:con_mad_decoder
+timer	mp3.h	/^	mad_timer_t timer;		\/* libmad timer *\/$/;"	m	struct:con_mad_decoder
+vbr_mmap_pos	mp3.h	/^	GArray *vbr_mmap_pos;		\/* Mmap position entries for easier backwards seek of VBR tracks *\/$/;"	m	struct:con_mad_decoder
+vbr_pbar_pos	mp3.h	/^	GArray *vbr_pbar_pos;		\/* Progress bar position entries for easier .... *\/$/;"	m	struct:con_mad_decoder
+vbr_time_pos	mp3.h	/^	GArray *vbr_time_pos;		\/* Time positions for easier ... *\/$/;"	m	struct:con_mad_decoder
+chan	mp3.h	/^	GIOChannel *chan;		\/* IO Channel to read from fd ( used for CBR) *\/$/;"	m	struct:con_mad_decoder
+map	mp3.h	/^	GMappedFile *map;		\/* Mmaped file ( used for VBR) *\/$/;"	m	struct:con_mad_decoder
+mstream	mp3.h	/^	struct mad_stream mstream;	\/* libmad stream *\/$/;"	m	struct:con_mad_decoder	typeref:struct:con_mad_decoder::mad_stream
+mframe	mp3.h	/^	struct mad_frame mframe;	\/* libmad frame *\/$/;"	m	struct:con_mad_decoder	typeref:struct:con_mad_decoder::mad_frame
+mheader	mp3.h	/^	struct mad_header mheader;	\/* libmad header *\/$/;"	m	struct:con_mad_decoder	typeref:struct:con_mad_decoder::mad_header
+msynth	mp3.h	/^	struct mad_synth msynth;	\/* libmad PCM synth *\/$/;"	m	struct:con_mad_decoder	typeref:struct:con_mad_decoder::mad_synth
+play_mp3	mp3.h	/^void play_mp3(struct con_win *cwin);$/;"	p
+new_musicobject_from_file	musicobject.c	/^struct musicobject* new_musicobject_from_file(gchar *file)$/;"	f
+new_musicobject_from_db	musicobject.c	/^struct musicobject* new_musicobject_from_db(gint location_id, struct con_win *cwin)$/;"	f
+delete_musicobject	musicobject.c	/^void delete_musicobject(struct musicobject *mobj)$/;"	f
+test_delete_musicobject	musicobject.c	/^void test_delete_musicobject(struct musicobject *mobj, struct con_win *cwin)$/;"	f
+scale	playback_mp3.c	/^static signed int scale(mad_fixed_t sample)$/;"	f	file:
+convert_samples	playback_mp3.c	/^static gint convert_samples(struct mad_pcm mpcm, guchar *out_buf)$/;"	f	file:
+fill_input_buffer	playback_mp3.c	/^static gint fill_input_buffer(struct con_mad_decoder *mdec,$/;"	f	file:
+update_gui	playback_mp3.c	/^static void update_gui(struct con_mad_decoder *mdec, struct con_win *cwin)$/;"	f	file:
+update_vbr_seek_table	playback_mp3.c	/^static void update_vbr_seek_table(gint64 mmap_pos,$/;"	f	file:
+mad_get_type	playback_mp3.c	/^static gint mad_get_type(struct con_mad_decoder *mdec, struct con_win *cwin)$/;"	f	file:
+cbr_seek	playback_mp3.c	/^static gint cbr_seek(gint seek_len, struct con_mad_decoder *mdec, struct con_win *cwin)$/;"	f	file:
+frac_from_table	playback_mp3.c	/^static gint frac_from_table(gdouble seek_fraction, struct con_mad_decoder *mdec)$/;"	f	file:
+vbr_seek	playback_mp3.c	/^static gint vbr_seek(gdouble seek_fraction,$/;"	f	file:
+mad_seek	playback_mp3.c	/^static gint mad_seek(struct con_mad_decoder *mdec, struct con_win *cwin)$/;"	f	file:
+mad_decode	playback_mp3.c	/^static gint mad_decode(struct con_mad_decoder *mdec, struct con_win *cwin)$/;"	f	file:
+play_mp3	playback_mp3.c	/^void play_mp3(struct con_win *cwin)$/;"	f
+update_gui	playback_oggvorbis.c	/^static void update_gui(struct con_vorbis_decoder *vdec, struct con_win *cwin)$/;"	f	file:
+vorbis_seek	playback_oggvorbis.c	/^static gint vorbis_seek(struct con_vorbis_decoder *vdec, struct con_win *cwin)$/;"	f	file:
+vorbis_decode	playback_oggvorbis.c	/^static gint vorbis_decode(struct con_vorbis_decoder *vdec, struct con_win *cwin)$/;"	f	file:
+play_oggvorbis	playback_oggvorbis.c	/^void play_oggvorbis(struct con_win *cwin)$/;"	f
+write_callback	playback_flac.c	/^static FLAC__StreamDecoderWriteStatus write_callback(const FLAC__StreamDecoder *decoder,$/;"	f	file:
+metadata_callback	playback_flac.c	/^static void metadata_callback(const FLAC__StreamDecoder *decoder,$/;"	f	file:
+error_callback	playback_flac.c	/^static void error_callback(const FLAC__StreamDecoder *decoder,$/;"	f	file:
+update_gui	playback_flac.c	/^static void update_gui(struct con_flac_decoder *fdec, struct con_win *cwin)$/;"	f	file:
+flac_init	playback_flac.c	/^static gint flac_init(struct con_flac_decoder* fdec, struct con_win *cwin)$/;"	f	file:
+flac_seek	playback_flac.c	/^static gint flac_seek(struct con_flac_decoder *fdec, struct con_win *cwin)$/;"	f	file:
+flac_decode	playback_flac.c	/^static gint flac_decode(struct con_flac_decoder *fdec, struct con_win *cwin)$/;"	f	file:
+play_flac	playback_flac.c	/^void play_flac(struct con_win *cwin)$/;"	f
+OGGVORBIS_H	oggvorbis.h	19;"	d
+OUTBUF_LEN	oggvorbis.h	23;"	d
+con_vorbis_decoder	oggvorbis.h	/^struct con_vorbis_decoder {$/;"	s
+buf	oggvorbis.h	/^	gchar buf[OUTBUF_LEN];$/;"	m	struct:con_vorbis_decoder
+played_seconds	oggvorbis.h	/^	gint played_seconds;$/;"	m	struct:con_vorbis_decoder
+tot_samples	oggvorbis.h	/^	gint64 tot_samples;$/;"	m	struct:con_vorbis_decoder
+vf	oggvorbis.h	/^	OggVorbis_File vf;$/;"	m	struct:con_vorbis_decoder
+play_oggvorbis	oggvorbis.h	/^void play_oggvorbis(struct con_win *cwin);$/;"	p
+ALSA_MIXER_DEV	audio.c	26;"	d	file:
+ALSA_MIXER_ELEM_PCM	audio.c	27;"	d	file:
+ALSA_MIXER_ELEM_MASTER	audio.c	28;"	d	file:
+alsa_mixer	audio.c	/^static snd_mixer_t *alsa_mixer = NULL;$/;"	v	file:
+alsa_elem	audio.c	/^static snd_mixer_elem_t *alsa_elem = NULL;$/;"	v	file:
+alsa_chans	audio.c	/^static GIOChannel **alsa_chans = NULL;$/;"	v	file:
+n_alsa_chans	audio.c	/^static int n_alsa_chans = 0;$/;"	v	file:
+alsa_elem_cb	audio.c	/^static int alsa_elem_cb(snd_mixer_elem_t *alsa_elem, unsigned int mask)$/;"	f	file:
+alsa_io_cb	audio.c	/^static gboolean alsa_io_cb(GIOChannel *chan, GIOCondition condition, gpointer data)$/;"	f	file:
+get_alsa_elem	audio.c	/^static snd_mixer_elem_t* get_alsa_elem(gchar *m_elem)$/;"	f	file:
+alsa_init_mixer	audio.c	/^static gint alsa_init_mixer(struct con_win *cwin)$/;"	f	file:
+POLL_FLAGS	audio.c	96;"	d	file:
+POLL_FLAGS	audio.c	208;"	d	file:
+alsa_mute_mixer	audio.c	/^static gint alsa_mute_mixer(struct con_win *cwin)$/;"	f	file:
+alsa_set_volume	audio.c	/^static void alsa_set_volume(struct con_win *cwin)$/;"	f	file:
+alsa_inc_volume	audio.c	/^static void alsa_inc_volume(struct con_win *cwin)$/;"	f	file:
+alsa_dec_volume	audio.c	/^static void alsa_dec_volume(struct con_win *cwin)$/;"	f	file:
+alsa_deinit_mixer	audio.c	/^static void alsa_deinit_mixer(struct con_win *cwin)$/;"	f	file:
+OSS_MIXER_DEV	audio.c	288;"	d	file:
+OSS_POLL_TIMER	audio.c	289;"	d	file:
+oss_mixer_fd	audio.c	/^static gint oss_mixer_fd;$/;"	v	file:
+g_poll_id	audio.c	/^static guint g_poll_id;$/;"	v	file:
+oss_mixer_poll	audio.c	/^static gboolean oss_mixer_poll(gpointer data)$/;"	f	file:
+oss_init_mixer	audio.c	/^static gint oss_init_mixer(struct con_win *cwin)$/;"	f	file:
+oss_mute_mixer	audio.c	/^static gint oss_mute_mixer(struct con_win *cwin)$/;"	f	file:
+oss_set_volume	audio.c	/^static void oss_set_volume(struct con_win *cwin)$/;"	f	file:
+oss_inc_volume	audio.c	/^static void oss_inc_volume(struct con_win *cwin)$/;"	f	file:
+oss_dec_volume	audio.c	/^static void oss_dec_volume(struct con_win *cwin)$/;"	f	file:
+oss_deinit_mixer	audio.c	/^static void oss_deinit_mixer(struct con_win *cwin)$/;"	f	file:
+soft_init_mixer	audio.c	/^static gint soft_init_mixer(struct con_win *cwin)$/;"	f	file:
+soft_mute_mixer	audio.c	/^static gint soft_mute_mixer(struct con_win *cwin)$/;"	f	file:
+soft_set_volume	audio.c	/^static void soft_set_volume(struct con_win *cwin)$/;"	f	file:
+soft_inc_volume	audio.c	/^static void soft_inc_volume(struct con_win *cwin)$/;"	f	file:
+soft_dec_volume	audio.c	/^static void soft_dec_volume(struct con_win *cwin)$/;"	f	file:
+soft_deinit_mixer	audio.c	/^static void soft_deinit_mixer(struct con_win *cwin)$/;"	f	file:
+set_alsa_mixer	audio.c	/^void set_alsa_mixer(struct con_win *cwin, gchar *mixer_elem)$/;"	f
+set_oss_mixer	audio.c	/^void set_oss_mixer(struct con_win *cwin, gchar *mixer_elem)$/;"	f
+set_soft_mixer	audio.c	/^void set_soft_mixer(struct con_win *cwin)$/;"	f
+soft_volume_apply	audio.c	/^void soft_volume_apply(gchar *buffer, gint buflen, struct con_win *cwin)$/;"	f
+open_audio_device	audio.c	/^gint open_audio_device(gint samplerate, gint channels,$/;"	f
+add_entry_playlist	playlist.c	/^static void add_entry_playlist(gchar *playlist,$/;"	f	file:
+add_row_current_playlist	playlist.c	/^static void add_row_current_playlist(GtkTreePath *path, struct con_win *cwin)$/;"	f	file:
+overwrite_existing_playlist	playlist.c	/^static gboolean overwrite_existing_playlist(const gchar *playlist, struct con_win *cwin)$/;"	f	file:
+add_playlist_current_playlist	playlist.c	/^void add_playlist_current_playlist(gchar *playlist, struct con_win *cwin)$/;"	f
+playlist_tree_row_activated_cb	playlist.c	/^void playlist_tree_row_activated_cb(GtkTreeView *playlist_tree,$/;"	f
+playlist_tree_right_click_cb	playlist.c	/^gboolean playlist_tree_right_click_cb(GtkWidget *widget,$/;"	f
+playlist_tree_play	playlist.c	/^void playlist_tree_play(GtkAction *action, struct con_win *cwin)$/;"	f
+playlist_tree_enqueue	playlist.c	/^void playlist_tree_enqueue(GtkAction *action, struct con_win *cwin)$/;"	f
+playlist_tree_delete	playlist.c	/^void playlist_tree_delete(GtkAction *action, struct con_win *cwin)$/;"	f
+dnd_playlist_tree_get	playlist.c	/^void dnd_playlist_tree_get(GtkWidget *widget,$/;"	f
+save_playlist	playlist.c	/^void save_playlist(gint playlist_id, gint type, struct con_win *cwin)$/;"	f
+new_playlist	playlist.c	/^void new_playlist(const gchar *playlist, gint type, struct con_win *cwin)$/;"	f
+append_playlist	playlist.c	/^void append_playlist(const gchar *playlist, gint type, struct con_win *cwin)$/;"	f
+init_playlist_view	playlist.c	/^void init_playlist_view(struct con_win *cwin)$/;"	f
+show_debug	consonance.c	/^gboolean show_debug = FALSE;$/;"	v
+common_cleanup	consonance.c	/^static void common_cleanup(struct con_win *cwin)$/;"	f	file:
+exit_consonance	consonance.c	/^void exit_consonance(GtkWidget *widget, struct con_win *cwin)$/;"	f
+main	consonance.c	/^gint main(gint argc, gchar *argv[])$/;"	f
+WAV_H	wav.h	19;"	d
+BUF_LEN	wav.h	23;"	d
+con_wav_decoder	wav.h	/^struct con_wav_decoder {$/;"	s
+fd	wav.h	/^	gint fd;		\/* File Descriptor of the currently playing track *\/$/;"	m	struct:con_wav_decoder
+buf	wav.h	/^	gshort buf[BUF_LEN];	\/* i\/p buffer *\/$/;"	m	struct:con_wav_decoder
+frame_size	wav.h	/^	gint frame_size;	\/* Frame size *\/$/;"	m	struct:con_wav_decoder
+frames_played	wav.h	/^	gint frames_played;	\/* Frames played so far *\/$/;"	m	struct:con_wav_decoder
+seconds_played	wav.h	/^	gint seconds_played;	\/* Seconds played so far *\/$/;"	m	struct:con_wav_decoder
+sfile	wav.h	/^	SNDFILE *sfile;		\/* sndfile file handle *\/$/;"	m	struct:con_wav_decoder
+sinfo	wav.h	/^	SF_INFO sinfo;		\/* sndfile info structure *\/$/;"	m	struct:con_wav_decoder
+play_wav	wav.h	/^void play_wav(struct con_win *cwin);$/;"	p
+FLAC_H	flac.h	20;"	d
+FLAC_OUT_BUF_LEN	flac.h	24;"	d
+con_flac_decoder	flac.h	/^struct con_flac_decoder {$/;"	s
+bits_per_sample	flac.h	/^	guint bits_per_sample;$/;"	m	struct:con_flac_decoder
+sample_rate	flac.h	/^	guint sample_rate;$/;"	m	struct:con_flac_decoder
+channels	flac.h	/^	guint channels;$/;"	m	struct:con_flac_decoder
+displayed_seconds	flac.h	/^	gint displayed_seconds;$/;"	m	struct:con_flac_decoder
+current_sample	flac.h	/^	guint64 current_sample;$/;"	m	struct:con_flac_decoder
+total_samples	flac.h	/^	guint64 total_samples;$/;"	m	struct:con_flac_decoder
+out_buf	flac.h	/^	guchar out_buf[FLAC_OUT_BUF_LEN];$/;"	m	struct:con_flac_decoder
+out_buf_len	flac.h	/^	guint out_buf_len;$/;"	m	struct:con_flac_decoder
+decoder	flac.h	/^	FLAC__StreamDecoder *decoder;$/;"	m	struct:con_flac_decoder
+play_flac	flac.h	/^void play_flac(struct con_win *cwin);$/;"	p
+get_image_from_dir	panel.c	/^static GdkPixbuf* get_image_from_dir(gchar *path, struct con_win *cwin)$/;"	f	file:
+get_pref_image_dir	panel.c	/^static GdkPixbuf* get_pref_image_dir(gchar *path, struct con_win *cwin)$/;"	f	file:
+__update_current_song_info	panel.c	/^void __update_current_song_info(struct con_win *cwin, gint length)$/;"	f
+unset_current_song_info	panel.c	/^void unset_current_song_info(struct con_win *cwin)$/;"	f
+__update_track_progress_bar	panel.c	/^void __update_track_progress_bar(struct con_win *cwin, gint length)$/;"	f
+unset_track_progress_bar	panel.c	/^void unset_track_progress_bar(struct con_win *cwin)$/;"	f
+track_progress_change_cb	panel.c	/^void track_progress_change_cb(GtkWidget *widget,$/;"	f
+update_album_art	panel.c	/^void update_album_art(struct musicobject *mobj, struct con_win *cwin)$/;"	f
+unset_album_art	panel.c	/^void unset_album_art(struct con_win *cwin)$/;"	f
+shuffle_button_handler	panel.c	/^void shuffle_button_handler(GtkToggleButton *button, struct con_win *cwin)$/;"	f
+repeat_button_handler	panel.c	/^void repeat_button_handler(GtkToggleButton *button, struct con_win *cwin)$/;"	f
+play_button_handler	panel.c	/^void play_button_handler(GtkButton *button, struct con_win *cwin)$/;"	f
+stop_button_handler	panel.c	/^void stop_button_handler(GtkButton *button, struct con_win *cwin)$/;"	f
+prev_button_handler	panel.c	/^void prev_button_handler(GtkButton *button, struct con_win *cwin)$/;"	f
+next_button_handler	panel.c	/^void next_button_handler(GtkButton *button, struct con_win *cwin)$/;"	f
+vol_button_handler	panel.c	/^void vol_button_handler(GtkScaleButton *button, gdouble value, struct con_win *cwin)$/;"	f
+play_button_toggle_state	panel.c	/^void play_button_toggle_state(struct con_win *cwin)$/;"	f
+album_art_toggle_state	panel.c	/^void album_art_toggle_state(struct con_win *cwin)$/;"	f
+resize_album_art_frame	panel.c	/^void resize_album_art_frame(struct con_win *cwin)$/;"	f
+get_wav_info	tags.c	/^gboolean get_wav_info(gchar *file, struct tags *tags)$/;"	f
+get_info_taglib	tags.c	/^static gboolean get_info_taglib(gchar *file, struct tags *tags)$/;"	f	file:
+get_mp3_info	tags.c	/^gboolean get_mp3_info(gchar *file, struct tags *tags)$/;"	f
+get_flac_info	tags.c	/^gboolean get_flac_info(gchar *file, struct tags *tags)$/;"	f
+get_ogg_info	tags.c	/^gboolean get_ogg_info(gchar *file, struct tags *tags)$/;"	f
+get_mod_info	tags.c	/^gboolean get_mod_info(gchar *file, struct tags *tags)$/;"	f
+save_tags_to_file	tags.c	/^gboolean save_tags_to_file(gchar *file, struct tags *ntag,$/;"	f
+add_entry_tag_completion	tags.c	/^static void add_entry_tag_completion(gchar *entry, GtkTreeModel *model)$/;"	f	file:
+confirm_tno_multiple_tracks	tags.c	/^static gboolean confirm_tno_multiple_tracks(gint tno, struct con_win *cwin)$/;"	f	file:
+confirm_title_multiple_tracks	tags.c	/^static gboolean confirm_title_multiple_tracks(gchar *title, struct con_win *cwin)$/;"	f	file:
+entry_validate_cb	tags.c	/^static gboolean entry_validate_cb(GtkWidget *entry, GdkEventKey *event,$/;"	f	file:
+tag_update	tags.c	/^void tag_update(GArray *loc_arr, GArray *file_arr, gint changed, struct tags *ntag,$/;"	f
+tag_edit_dialog	tags.c	/^gint tag_edit_dialog(struct tags *otag, struct tags *ntag,$/;"	f
+refresh_tag_completion_entries	tags.c	/^void refresh_tag_completion_entries(struct con_win *cwin)$/;"	f
+CONSONANCE_H	consonance.h	19;"	d
+MIN_WINDOW_WIDTH	consonance.h	52;"	d
+MIN_WINDOW_HEIGHT	consonance.h	53;"	d
+BROWSE_MODE_SIZE	consonance.h	54;"	d
+ALBUM_ART_SIZE	consonance.h	55;"	d
+PROGRESS_BAR_WIDTH	consonance.h	56;"	d
+COL_WIDTH_THRESH	consonance.h	57;"	d
+DEFAULT_PLAYLIST_COL_WIDTH	consonance.h	58;"	d
+OSD_TIMEOUT	consonance.h	59;"	d
+ALBUM_ART_PATTERN_LEN	consonance.h	60;"	d
+ALBUM_ART_NO_PATTERNS	consonance.h	61;"	d
+TAG_MAX_LEN	consonance.h	62;"	d
+P_TRACK_NO_STR	consonance.h	64;"	d
+P_TNO_FULL_STR	consonance.h	65;"	d
+P_TITLE_STR	consonance.h	66;"	d
+P_ARTIST_STR	consonance.h	67;"	d
+P_ALBUM_STR	consonance.h	68;"	d
+P_GENRE_STR	consonance.h	69;"	d
+P_BITRATE_STR	consonance.h	70;"	d
+P_YEAR_STR	consonance.h	71;"	d
+P_LENGTH_STR	consonance.h	72;"	d
+P_FILENAME_STR	consonance.h	73;"	d
+P_FOLDER_STR	consonance.h	78;"	d
+P_BASENAME_STR	consonance.h	79;"	d
+DEFAULT_SINK	consonance.h	81;"	d
+ALSA_SINK	consonance.h	82;"	d
+OSS_SINK	consonance.h	83;"	d
+DEFAULT_MIXER	consonance.h	85;"	d
+ALSA_MIXER	consonance.h	86;"	d
+OSS_MIXER	consonance.h	87;"	d
+SOFT_MIXER	consonance.h	88;"	d
+PROGRESS_BAR_TEXT	consonance.h	90;"	d
+TRACK_PROGRESS_BAR_STOPPED	consonance.h	91;"	d
+UP_DIR	consonance.h	92;"	d
+SAVE_PLAYLIST_STATE	consonance.h	93;"	d
+DBUS_PATH	consonance.h	95;"	d
+DBUS_NAME	consonance.h	96;"	d
+DBUS_INTERFACE	consonance.h	97;"	d
+DBUS_SIG_PLAY	consonance.h	99;"	d
+DBUS_SIG_STOP	consonance.h	100;"	d
+DBUS_SIG_PAUSE	consonance.h	101;"	d
+DBUS_SIG_NEXT	consonance.h	102;"	d
+DBUS_SIG_PREV	consonance.h	103;"	d
+DBUS_SIG_INC_VOL	consonance.h	104;"	d
+DBUS_SIG_DEC_VOL	consonance.h	105;"	d
+DBUS_SIG_SHOW_OSD	consonance.h	106;"	d
+DBUS_SIG_ADD_FILE	consonance.h	107;"	d
+DBUS_METHOD_CURRENT_STATE	consonance.h	109;"	d
+GROUP_GENERAL	consonance.h	111;"	d
+GROUP_LIBRARY	consonance.h	112;"	d
+GROUP_AUDIO	consonance.h	113;"	d
+KEY_INSTALLED_VERSION	consonance.h	115;"	d
+KEY_LIBRARY_DIR	consonance.h	116;"	d
+KEY_LIBRARY_DELETE	consonance.h	117;"	d
+KEY_LIBRARY_ADD	consonance.h	118;"	d
+KEY_FILETREE_PWD	consonance.h	119;"	d
+KEY_SHOW_HIDDEN_FILE	consonance.h	120;"	d
+KEY_SHOW_ALBUM_ART	consonance.h	121;"	d
+KEY_ALBUM_ART_PATTERN	consonance.h	122;"	d
+KEY_SHOW_OSD	consonance.h	123;"	d
+KEY_SAVE_PLAYLIST	consonance.h	124;"	d
+KEY_SHUFFLE	consonance.h	125;"	d
+KEY_REPEAT	consonance.h	126;"	d
+KEY_PLAYLIST_COLUMNS	consonance.h	127;"	d
+KEY_PLAYLIST_COLUMN_WIDTHS	consonance.h	128;"	d
+KEY_LIBRARY_TREE_NODES	consonance.h	129;"	d
+KEY_LIBRARY_VIEW_ORDER	consonance.h	130;"	d
+KEY_LIBRARY_LAST_SCANNED	consonance.h	131;"	d
+KEY_WINDOW_SIZE	consonance.h	132;"	d
+KEY_AUDIO_SINK	consonance.h	133;"	d
+KEY_SOFWARE_MIXER	consonance.h	134;"	d
+TAG_TNO_CHANGED	consonance.h	136;"	d
+TAG_TITLE_CHANGED	consonance.h	137;"	d
+TAG_ARTIST_CHANGED	consonance.h	138;"	d
+TAG_ALBUM_CHANGED	consonance.h	139;"	d
+TAG_GENRE_CHANGED	consonance.h	140;"	d
+TAG_YEAR_CHANGED	consonance.h	141;"	d
+PLAYLIST_CURR	consonance.h	/^	PLAYLIST_CURR = 1,$/;"	e	enum:__anon2
+PLAYLIST_NEXT	consonance.h	/^	PLAYLIST_NEXT,$/;"	e	enum:__anon2
+PLAYLIST_PREV	consonance.h	/^	PLAYLIST_PREV$/;"	e	enum:__anon2
+CMD_PLAYBACK_STOP	consonance.h	/^	CMD_PLAYBACK_STOP = 1,$/;"	e	enum:__anon3
+CMD_PLAYBACK_PAUSE	consonance.h	/^	CMD_PLAYBACK_PAUSE,$/;"	e	enum:__anon3
+CMD_PLAYBACK_RESUME	consonance.h	/^	CMD_PLAYBACK_RESUME,$/;"	e	enum:__anon3
+CMD_PLAYBACK_SEEK	consonance.h	/^	CMD_PLAYBACK_SEEK$/;"	e	enum:__anon3
+ST_PLAYING	consonance.h	/^	ST_PLAYING = 1,$/;"	e	enum:__anon4
+ST_STOPPED	consonance.h	/^	ST_STOPPED,$/;"	e	enum:__anon4
+ST_PAUSED	consonance.h	/^	ST_PAUSED$/;"	e	enum:__anon4
+PAGE_LIBRARY	consonance.h	/^	PAGE_LIBRARY,$/;"	e	enum:__anon5
+PAGE_FILE	consonance.h	/^	PAGE_FILE,$/;"	e	enum:__anon5
+NODE_GENRE	consonance.h	/^	NODE_GENRE,$/;"	e	enum:__anon6
+NODE_ARTIST	consonance.h	/^	NODE_ARTIST,$/;"	e	enum:__anon6
+NODE_ALBUM	consonance.h	/^	NODE_ALBUM,$/;"	e	enum:__anon6
+NODE_TRACK	consonance.h	/^	NODE_TRACK,$/;"	e	enum:__anon6
+NODE_FOLDER	consonance.h	/^	NODE_FOLDER,$/;"	e	enum:__anon6
+NODE_BASENAME	consonance.h	/^	NODE_BASENAME$/;"	e	enum:__anon6
+L_PIXBUF	consonance.h	/^	L_PIXBUF,$/;"	e	enum:__anon7
+L_NODE_DATA	consonance.h	/^	L_NODE_DATA,$/;"	e	enum:__anon7
+L_NODE_TYPE	consonance.h	/^	L_NODE_TYPE,$/;"	e	enum:__anon7
+L_LOCATION_ID	consonance.h	/^	L_LOCATION_ID,$/;"	e	enum:__anon7
+L_VISIBILE	consonance.h	/^	L_VISIBILE,$/;"	e	enum:__anon7
+N_L_COLUMNS	consonance.h	/^	N_L_COLUMNS$/;"	e	enum:__anon7
+P_PIXBUF	consonance.h	/^	P_PIXBUF,$/;"	e	enum:__anon8
+P_PLAYLIST	consonance.h	/^	P_PLAYLIST,$/;"	e	enum:__anon8
+N_PL_COLUMNS	consonance.h	/^	N_PL_COLUMNS$/;"	e	enum:__anon8
+F_PIXBUF	consonance.h	/^	F_PIXBUF,$/;"	e	enum:__anon9
+F_NAME	consonance.h	/^	F_NAME,$/;"	e	enum:__anon9
+F_FILE_TYPE	consonance.h	/^	F_FILE_TYPE,$/;"	e	enum:__anon9
+N_F_COLUMNS	consonance.h	/^	N_F_COLUMNS$/;"	e	enum:__anon9
+P_MOBJ_PTR	consonance.h	/^	P_MOBJ_PTR,$/;"	e	enum:__anon10
+P_TRACK_NO	consonance.h	/^	P_TRACK_NO,$/;"	e	enum:__anon10
+P_TITLE	consonance.h	/^	P_TITLE,$/;"	e	enum:__anon10
+P_ARTIST	consonance.h	/^	P_ARTIST,$/;"	e	enum:__anon10
+P_ALBUM	consonance.h	/^	P_ALBUM,$/;"	e	enum:__anon10
+P_GENRE	consonance.h	/^	P_GENRE,$/;"	e	enum:__anon10
+P_BITRATE	consonance.h	/^	P_BITRATE,$/;"	e	enum:__anon10
+P_YEAR	consonance.h	/^	P_YEAR,$/;"	e	enum:__anon10
+P_LENGTH	consonance.h	/^	P_LENGTH,$/;"	e	enum:__anon10
+P_FILENAME	consonance.h	/^	P_FILENAME,$/;"	e	enum:__anon10
+P_PLAYED	consonance.h	/^	P_PLAYED,$/;"	e	enum:__anon10
+N_P_COLUMNS	consonance.h	/^	N_P_COLUMNS$/;"	e	enum:__anon10
+TARGET_LOCATION_ID	consonance.h	/^	TARGET_LOCATION_ID,$/;"	e	enum:__anon11
+TARGET_FILENAME	consonance.h	/^	TARGET_FILENAME,$/;"	e	enum:__anon11
+TARGET_PLAYLIST	consonance.h	/^	TARGET_PLAYLIST$/;"	e	enum:__anon11
+FOLDER_FILE	consonance.h	/^	FOLDER_FILE,$/;"	e	enum:__anon12
+ARTIST_TRACK	consonance.h	/^	ARTIST_TRACK,$/;"	e	enum:__anon12
+ALBUM_TRACK	consonance.h	/^	ALBUM_TRACK,$/;"	e	enum:__anon12
+GENRE_TRACK	consonance.h	/^	GENRE_TRACK,$/;"	e	enum:__anon12
+ARTIST_ALBUM_TRACK	consonance.h	/^	ARTIST_ALBUM_TRACK,$/;"	e	enum:__anon12
+GENRE_ARTIST_TRACK	consonance.h	/^	GENRE_ARTIST_TRACK,$/;"	e	enum:__anon12
+GENRE_ALBUM_TRACK	consonance.h	/^	GENRE_ALBUM_TRACK,$/;"	e	enum:__anon12
+GENRE_ARTIST_ALBUM_TRACK	consonance.h	/^	GENRE_ARTIST_ALBUM_TRACK$/;"	e	enum:__anon12
+NEW_PLAYLIST	consonance.h	/^	NEW_PLAYLIST,$/;"	e	enum:__anon13
+APPEND_PLAYLIST	consonance.h	/^	APPEND_PLAYLIST,$/;"	e	enum:__anon13
+SAVE_COMPLETE	consonance.h	/^	SAVE_COMPLETE,$/;"	e	enum:__anon13
+SAVE_SELECTED	consonance.h	/^	SAVE_SELECTED$/;"	e	enum:__anon13
+FILE_WAV	consonance.h	/^	FILE_WAV,$/;"	e	enum:__anon14
+FILE_MP3	consonance.h	/^	FILE_MP3,$/;"	e	enum:__anon14
+FILE_FLAC	consonance.h	/^	FILE_FLAC,$/;"	e	enum:__anon14
+FILE_OGGVORBIS	consonance.h	/^	FILE_OGGVORBIS,$/;"	e	enum:__anon14
+FILE_MODPLUG	consonance.h	/^	FILE_MODPLUG$/;"	e	enum:__anon14
+F_TYPE_FILE	consonance.h	/^	F_TYPE_FILE,$/;"	e	enum:__anon15
+F_TYPE_DIR	consonance.h	/^	F_TYPE_DIR$/;"	e	enum:__anon15
+tags	consonance.h	/^struct tags {$/;"	s
+title	consonance.h	/^	gchar *title;$/;"	m	struct:tags
+artist	consonance.h	/^	gchar *artist;$/;"	m	struct:tags
+album	consonance.h	/^	gchar *album;$/;"	m	struct:tags
+genre	consonance.h	/^	gchar *genre;$/;"	m	struct:tags
+year	consonance.h	/^	guint year;$/;"	m	struct:tags
+track_no	consonance.h	/^	guint track_no;$/;"	m	struct:tags
+length	consonance.h	/^	gint length;$/;"	m	struct:tags
+bitrate	consonance.h	/^	gint bitrate;$/;"	m	struct:tags
+channels	consonance.h	/^	gint channels;$/;"	m	struct:tags
+samplerate	consonance.h	/^	gint samplerate;$/;"	m	struct:tags
+pixbuf	consonance.h	/^struct pixbuf {$/;"	s
+pixbuf_dir	consonance.h	/^	GdkPixbuf *pixbuf_dir;		\/* Folder image in File tree *\/$/;"	m	struct:pixbuf
+pixbuf_file	consonance.h	/^	GdkPixbuf *pixbuf_file;		\/* File image in File tree *\/$/;"	m	struct:pixbuf
+pixbuf_artist	consonance.h	/^	GdkPixbuf *pixbuf_artist;	\/* Artist image in Library tree *\/$/;"	m	struct:pixbuf
+pixbuf_album	consonance.h	/^	GdkPixbuf *pixbuf_album;	\/* Album image in Library tree *\/$/;"	m	struct:pixbuf
+pixbuf_track	consonance.h	/^	GdkPixbuf *pixbuf_track;	\/* Track image in Library tree *\/$/;"	m	struct:pixbuf
+pixbuf_genre	consonance.h	/^	GdkPixbuf *pixbuf_genre;	\/* Genre image in Library tree *\/$/;"	m	struct:pixbuf
+pixbuf_app	consonance.h	/^	GdkPixbuf *pixbuf_app;		\/* Application logo *\/$/;"	m	struct:pixbuf
+image_pause	consonance.h	/^	GtkWidget *image_pause;		\/* Play button image *\/$/;"	m	struct:pixbuf
+image_play	consonance.h	/^	GtkWidget *image_play;		\/* Pause button image *\/$/;"	m	struct:pixbuf
+con_pref	consonance.h	/^struct con_pref {$/;"	s
+installed_version	consonance.h	/^	gchar *installed_version;	\/* Installed version from conrc *\/$/;"	m	struct:con_pref
+audio_sink	consonance.h	/^	gchar *audio_sink;		\/* Audio output *\/$/;"	m	struct:con_pref
+album_art_pattern	consonance.h	/^	gchar *album_art_pattern;	\/* Album art file patterns *\/$/;"	m	struct:con_pref
+window_width	consonance.h	/^	gint window_width;		\/* Main window width *\/$/;"	m	struct:con_pref
+window_height	consonance.h	/^	gint window_height;		\/* Main window height *\/$/;"	m	struct:con_pref
+cur_library_view	consonance.h	/^	gint cur_library_view;		\/* Current library view *\/$/;"	m	struct:con_pref
+last_rescan_time	consonance.h	/^	GTimeVal last_rescan_time;	\/* Last library rescan timeval *\/$/;"	m	struct:con_pref
+configrc_keyfile	consonance.h	/^	GKeyFile *configrc_keyfile;	\/* conrc keyfile handle *\/$/;"	m	struct:con_pref
+configrc_file	consonance.h	/^	gchar *configrc_file;		\/* File location of conrc *\/$/;"	m	struct:con_pref
+show_hidden_files	consonance.h	/^	gboolean show_hidden_files;	\/* Flag to show hidden files in File tree *\/$/;"	m	struct:con_pref
+show_album_art	consonance.h	/^	gboolean show_album_art;	\/* Flag to show album art in Panel *\/$/;"	m	struct:con_pref
+show_osd	consonance.h	/^	gboolean show_osd;		\/* Flag to show OSD on desktop *\/$/;"	m	struct:con_pref
+shuffle	consonance.h	/^	gboolean shuffle;		\/* Toggle shuffle on\/off *\/$/;"	m	struct:con_pref
+repeat	consonance.h	/^	gboolean repeat;		\/* Toggle repeat on\/off *\/$/;"	m	struct:con_pref
+save_playlist	consonance.h	/^	gboolean save_playlist;		\/* Save current playlist on quitting *\/$/;"	m	struct:con_pref
+software_mixer	consonance.h	/^	gboolean software_mixer;	\/* Use software mixer *\/$/;"	m	struct:con_pref
+library_dir	consonance.h	/^	GSList *library_dir;		\/* List of library locations on the filesystem *\/$/;"	m	struct:con_pref
+playlist_columns	consonance.h	/^	GSList *playlist_columns;	\/* List of columns set to visible *\/$/;"	m	struct:con_pref
+playlist_column_widths	consonance.h	/^	GSList *playlist_column_widths;	\/* List of corresponding column widths *\/$/;"	m	struct:con_pref
+library_tree_nodes	consonance.h	/^	GSList *library_tree_nodes;	\/* List of nodes in library tree *\/$/;"	m	struct:con_pref
+lib_delete	consonance.h	/^	GSList *lib_delete;		\/* Libraries deleted from prefs *\/$/;"	m	struct:con_pref
+lib_add	consonance.h	/^	GSList *lib_add;		\/* Libraries added to prefs *\/$/;"	m	struct:con_pref
+hidden_files	consonance.h	/^	GtkWidget *hidden_files;	\/* Hidden files widget *\/$/;"	m	struct:con_pref
+album_art	consonance.h	/^	GtkWidget *album_art;		\/* Album art widget *\/$/;"	m	struct:con_pref
+osd	consonance.h	/^	GtkWidget *osd;			\/* OSD *\/$/;"	m	struct:con_pref
+save_playlist_w	consonance.h	/^	GtkWidget *save_playlist_w;	\/* Save playlist *\/$/;"	m	struct:con_pref
+album_art_pattern_w	consonance.h	/^	GtkWidget *album_art_pattern_w;	\/* Album art file pattern *\/$/;"	m	struct:con_pref
+soft_mixer	consonance.h	/^	GtkWidget *soft_mixer;		\/* Software mixer widget *\/$/;"	m	struct:con_pref
+audio_sink_combo	consonance.h	/^	GtkWidget *audio_sink_combo;	\/* Audio output driver *\/$/;"	m	struct:con_pref
+library_view	consonance.h	/^	GtkWidget *library_view;	\/* Library list widget *\/$/;"	m	struct:con_pref
+musicobject	consonance.h	/^struct musicobject {$/;"	s
+tags	consonance.h	/^	struct tags *tags;		\/* Tags of a single musicobject *\/$/;"	m	struct:musicobject	typeref:struct:musicobject::tags
+file	consonance.h	/^	gchar *file;			\/* Filename of this musicobject *\/$/;"	m	struct:musicobject
+file_type	consonance.h	/^	gint file_type;			\/* Filetype { FILE_MP3,... } *\/$/;"	m	struct:musicobject
+db_result	consonance.h	/^struct db_result {$/;"	s
+resultp	consonance.h	/^	gchar **resultp;		\/* The actual result values of a SQLITE3 query*\/$/;"	m	struct:db_result
+no_rows	consonance.h	/^	gint no_rows;			\/* No. of rows returned in the result *\/$/;"	m	struct:db_result
+no_columns	consonance.h	/^	gint no_columns;		\/* No. of columns returned in the result *\/$/;"	m	struct:db_result
+con_state	consonance.h	/^struct con_state {$/;"	s
+unique_instance	consonance.h	/^	gboolean unique_instance;		\/* If current invocation of app is unique *\/$/;"	m	struct:con_state
+stop_scan	consonance.h	/^	gboolean stop_scan;			\/* Flag to stop rescan process *\/$/;"	m	struct:con_state
+view_change	consonance.h	/^	gboolean view_change;			\/* If library view change is in progress *\/$/;"	m	struct:con_state
+curr_mobj_clear	consonance.h	/^	gboolean curr_mobj_clear;		\/* Clear curr_mobj flag *\/$/;"	m	struct:con_state
+advance_track	consonance.h	/^	gboolean advance_track;                 \/* Advance next track - set by playback thread *\/$/;"	m	struct:con_state
+state	consonance.h	/^	gint state;				\/* State of the player { ST_STOPPED, ... } *\/$/;"	m	struct:con_state
+cmd	consonance.h	/^	gint cmd;				\/* Thread Command {CMD_PLAYBACK_STOP, ... } *\/$/;"	m	struct:con_state
+seek_len	consonance.h	/^	gint seek_len;				\/* New seek length to pass to playback thread *\/$/;"	m	struct:con_state
+tracks_curr_playlist	consonance.h	/^	gint tracks_curr_playlist;		\/* Total no. of tracks in the current playlist *\/$/;"	m	struct:con_state
+unplayed_tracks	consonance.h	/^	gint unplayed_tracks;			\/* Total no. of tracks that haven't been played *\/$/;"	m	struct:con_state
+newsec	consonance.h	/^	gint newsec;				\/* Arg for idle func invoked from playback thread *\/$/;"	m	struct:con_state
+seek_fraction	consonance.h	/^	gdouble seek_fraction;			\/* New seek fraction to pass to playback thread *\/$/;"	m	struct:con_state
+file_tree_pwd	consonance.h	/^	gchar *file_tree_pwd;			\/* Current folder on display in File tree *\/$/;"	m	struct:con_state
+filter_entry	consonance.h	/^	gchar *filter_entry;			\/* Search entry for filtering library *\/$/;"	m	struct:con_state
+rand	consonance.h	/^	GRand *rand;				\/* To generate random numbers *\/$/;"	m	struct:con_state
+c_thread	consonance.h	/^	GThread *c_thread;			\/* Playback thread *\/$/;"	m	struct:con_state
+c_mutex	consonance.h	/^	GMutex *c_mutex;			\/* Mutex between playback thread and main process *\/$/;"	m	struct:con_state
+c_cond	consonance.h	/^	GCond *c_cond;				\/* Cond Between playback thread and main process *\/$/;"	m	struct:con_state
+rand_track_refs	consonance.h	/^	GList *rand_track_refs;			\/* List of references maintained in Shuffle mode *\/$/;"	m	struct:con_state
+curr_rand_ref	consonance.h	/^	GtkTreeRowReference *curr_rand_ref;	\/* Currently playing track in Shuffle mode *\/$/;"	m	struct:con_state
+curr_seq_ref	consonance.h	/^	GtkTreeRowReference *curr_seq_ref;	\/* Currently playing track in non-Shuffle mode *\/$/;"	m	struct:con_state
+curr_mobj	consonance.h	/^	struct musicobject *curr_mobj;		\/* musicobject of currently playing track *\/$/;"	m	struct:con_state	typeref:struct:con_state::musicobject
+con_mixer	consonance.h	/^struct con_mixer {$/;"	s
+mixer_elem	consonance.h	/^	gchar *mixer_elem;			\/* Mixer elem from cmdline *\/$/;"	m	struct:con_mixer
+min_vol	consonance.h	/^	glong min_vol;				\/* Min. volume obtained from ALSA *\/$/;"	m	struct:con_mixer
+max_vol	consonance.h	/^	glong max_vol;				\/* Max. volume obtained from ALSA *\/$/;"	m	struct:con_mixer
+curr_vol	consonance.h	/^	glong curr_vol;				\/* Current volume *\/$/;"	m	struct:con_mixer
+set_volume	consonance.h	/^	void (*set_volume)(struct con_win *);	\/* Callback to set volume *\/$/;"	m	struct:con_mixer
+inc_volume	consonance.h	/^	void (*inc_volume)(struct con_win *);	\/* Increase vol by 1 *\/$/;"	m	struct:con_mixer
+dec_volume	consonance.h	/^	void (*dec_volume)(struct con_win *);	\/* Decrease vol by 1 *\/$/;"	m	struct:con_mixer
+init_mixer	consonance.h	/^	gint (*init_mixer)(struct con_win *);	\/* Callback to initialize mixer *\/$/;"	m	struct:con_mixer
+deinit_mixer	consonance.h	/^	void (*deinit_mixer)(struct con_win *); \/* Callback to deinit mixer *\/$/;"	m	struct:con_mixer
+mute_mixer	consonance.h	/^	gint (*mute_mixer)(struct con_win *);	\/* Callback to mute mixer *\/$/;"	m	struct:con_mixer
+con_dbase	consonance.h	/^struct con_dbase {$/;"	s
+db_file	consonance.h	/^	gchar *db_file;		\/* Filename of the DB file (~\/.condb) *\/$/;"	m	struct:con_dbase
+db	consonance.h	/^	sqlite3 *db;		\/* SQLITE3 handle of the opened DB *\/$/;"	m	struct:con_dbase
+con_libao	consonance.h	/^struct con_libao {$/;"	s
+ao_driver_id	consonance.h	/^	gint ao_driver_id;		\/* libao device ID *\/$/;"	m	struct:con_libao
+ao_dev	consonance.h	/^	ao_device *ao_dev;		\/* libao handle *\/$/;"	m	struct:con_libao
+format	consonance.h	/^	ao_sample_format format;	\/* Sample format *\/$/;"	m	struct:con_libao
+con_win	consonance.h	/^struct con_win {$/;"	s
+pixbuf	consonance.h	/^	struct pixbuf *pixbuf;				\/* Various pixbufs *\/$/;"	m	struct:con_win	typeref:struct:con_win::pixbuf
+cpref	consonance.h	/^	struct con_pref *cpref;				\/* Preferences *\/$/;"	m	struct:con_win	typeref:struct:con_win::con_pref
+cstate	consonance.h	/^	struct con_state *cstate;			\/* Player state *\/$/;"	m	struct:con_win	typeref:struct:con_win::con_state
+cdbase	consonance.h	/^	struct con_dbase *cdbase;			\/* Library DB *\/$/;"	m	struct:con_win	typeref:struct:con_win::con_dbase
+cmixer	consonance.h	/^	struct con_mixer *cmixer;			\/* Mixer *\/$/;"	m	struct:con_win	typeref:struct:con_win::con_mixer
+clibao	consonance.h	/^	struct con_libao *clibao;			\/* libao *\/$/;"	m	struct:con_win	typeref:struct:con_win::con_libao
+mainwindow	consonance.h	/^	GtkWidget *mainwindow;				\/* Main GTK window *\/$/;"	m	struct:con_win
+hbox_panel	consonance.h	/^	GtkWidget *hbox_panel;				\/* Panel hbox *\/$/;"	m	struct:con_win
+album_art_frame	consonance.h	/^	GtkWidget *album_art_frame;			\/* Album art frame *\/$/;"	m	struct:con_win
+album_art	consonance.h	/^	GtkWidget *album_art;				\/* Album art image *\/$/;"	m	struct:con_win
+track_progress_bar	consonance.h	/^	GtkWidget *track_progress_bar;			\/* Progress bar *\/$/;"	m	struct:con_win
+shuffle_button	consonance.h	/^	GtkWidget *shuffle_button;			\/* Shuffle tracks *\/$/;"	m	struct:con_win
+repeat_button	consonance.h	/^	GtkWidget *repeat_button;			\/* Repeat tracks *\/$/;"	m	struct:con_win
+prev_button	consonance.h	/^	GtkWidget *prev_button;				\/* Previous track *\/$/;"	m	struct:con_win
+play_button	consonance.h	/^	GtkWidget *play_button;				\/* Play track *\/$/;"	m	struct:con_win
+stop_button	consonance.h	/^	GtkWidget *stop_button;				\/* Stop playing *\/$/;"	m	struct:con_win
+next_button	consonance.h	/^	GtkWidget *next_button;				\/* Next track *\/$/;"	m	struct:con_win
+vol_button	consonance.h	/^	GtkWidget *vol_button;				\/* Adjust volume *\/$/;"	m	struct:con_win
+current_playlist	consonance.h	/^	GtkWidget *current_playlist;			\/* Current playlist view *\/$/;"	m	struct:con_win
+status_bar	consonance.h	/^	GtkWidget *status_bar;				\/* Status bar *\/$/;"	m	struct:con_win
+search_bar	consonance.h	/^	GtkWidget *search_bar;				\/* Search bar (simple) *\/$/;"	m	struct:con_win
+search_entry	consonance.h	/^	GtkWidget *search_entry;			\/* Text entry field for searching *\/$/;"	m	struct:con_win
+browse_mode	consonance.h	/^	GtkWidget *browse_mode;				\/* Browse mode ( file \/ library ) *\/$/;"	m	struct:con_win
+library_tree	consonance.h	/^	GtkWidget *library_tree;			\/* Library tree view *\/$/;"	m	struct:con_win
+playlist_tree	consonance.h	/^	GtkWidget *playlist_tree;			\/* Playlist tree view *\/$/;"	m	struct:con_win
+file_tree	consonance.h	/^	GtkWidget *file_tree;				\/* File tree view *\/$/;"	m	struct:con_win
+header_context_menu	consonance.h	/^	GtkWidget *header_context_menu;			\/* Column header right click menu *\/$/;"	m	struct:con_win
+library_store	consonance.h	/^	GtkTreeStore *library_store;			\/* Library child model *\/$/;"	m	struct:con_win
+cmd_context	consonance.h	/^	GOptionContext *cmd_context;			\/* Cmd Line option context *\/$/;"	m	struct:con_win
+status_icon	consonance.h	/^	GtkStatusIcon *status_icon;			\/* Status icon in the system tray *\/$/;"	m	struct:con_win
+completion	consonance.h	/^	GtkEntryCompletion *completion[3];		\/* Tag completion *\/$/;"	m	struct:con_win
+cp_context_menu	consonance.h	/^	GtkUIManager *cp_context_menu;			\/* Current playlist right click menu *\/$/;"	m	struct:con_win
+playlist_tree_context_menu	consonance.h	/^	GtkUIManager *playlist_tree_context_menu;	\/* Playlist tree right click menu *\/$/;"	m	struct:con_win
+library_tree_context_menu	consonance.h	/^	GtkUIManager *library_tree_context_menu;	\/* Library tree right click menu *\/$/;"	m	struct:con_win
+library_page_context_menu	consonance.h	/^	GtkUIManager *library_page_context_menu;	\/* Library page right click menu *\/$/;"	m	struct:con_win
+file_tree_dir_context_menu	consonance.h	/^	GtkUIManager *file_tree_dir_context_menu;	\/* File tree right click menu (Dir) *\/$/;"	m	struct:con_win
+file_tree_file_context_menu	consonance.h	/^	GtkUIManager *file_tree_file_context_menu;	\/* File tree right click menu (File) *\/$/;"	m	struct:con_win
+systray_menu	consonance.h	/^	GtkUIManager *systray_menu;			\/* System tray right click menu *\/$/;"	m	struct:con_win
+con_dbus	consonance.h	/^	DBusConnection *con_dbus;			\/* DBUS connection *\/$/;"	m	struct:con_win
+switch_cb_id	consonance.h	/^extern gulong switch_cb_id;$/;"	x
+show_debug	consonance.h	/^extern gboolean show_debug;$/;"	x
+mime_mpeg	consonance.h	/^extern const gchar *mime_mpeg[];$/;"	x
+mime_wav	consonance.h	/^extern const gchar *mime_wav[];$/;"	x
+mime_flac	consonance.h	/^extern const gchar *mime_flac[];$/;"	x
+mime_ogg	consonance.h	/^extern const gchar *mime_ogg[];$/;"	x
+mime_image	consonance.h	/^extern const gchar *mime_image[];$/;"	x
+volume_convert	consonance.h	/^static inline long volume_convert(glong val, long omin, long omax, long nmin, long nmax) {$/;"	f
+for_each_result_row	consonance.h	463;"	d
+SCALE_UP_VOL	consonance.h	466;"	d
+SCALE_DOWN_VOL	consonance.h	467;"	d
+CDEBUG	consonance.h	471;"	d
+open_file_action	consonance.h	/^void open_file_action(GtkAction *action, struct con_win *cwin);$/;"	p
+quit_action	consonance.h	/^void quit_action(GtkAction *action, struct con_win *cwin);$/;"	p
+expand_all_action	consonance.h	/^void expand_all_action(GtkAction *action, struct con_win *cwin);$/;"	p
+collapse_all_action	consonance.h	/^void collapse_all_action(GtkAction *action, struct con_win *cwin);$/;"	p
+search_library_action	consonance.h	/^void search_library_action(GtkAction *action, struct con_win *cwin);$/;"	p
+search_playlist_action	consonance.h	/^void search_playlist_action(GtkAction *action, struct con_win *cwin);$/;"	p
+pref_action	consonance.h	/^void pref_action(GtkAction *action, struct con_win *cwin);$/;"	p
+rescan_library_action	consonance.h	/^void rescan_library_action(GtkAction *action, struct con_win *cwin);$/;"	p
+update_library_action	consonance.h	/^void update_library_action(GtkAction *action, struct con_win *cwin);$/;"	p
+add_all_action	consonance.h	/^void add_all_action(GtkAction *action, struct con_win *cwin);$/;"	p
+statistics_action	consonance.h	/^void statistics_action(GtkAction *action, struct con_win *cwin);$/;"	p
+about_action	consonance.h	/^void about_action(GtkAction *action, struct con_win *cwin);$/;"	p
+update_current_song_info	consonance.h	/^gboolean update_current_song_info(gpointer data);$/;"	p
+__update_current_song_info	consonance.h	/^void __update_current_song_info(struct con_win *cwin, gint length);$/;"	p
+unset_current_song_info	consonance.h	/^void unset_current_song_info(struct con_win *cwin);$/;"	p
+update_track_progress_bar	consonance.h	/^gboolean update_track_progress_bar(gpointer data);$/;"	p
+__update_track_progress_bar	consonance.h	/^void __update_track_progress_bar(struct con_win *cwin, gint length);$/;"	p
+unset_track_progress_bar	consonance.h	/^void unset_track_progress_bar(struct con_win *cwin);$/;"	p
+track_progress_change_cb	consonance.h	/^void track_progress_change_cb(GtkWidget *widget,$/;"	p
+update_album_art	consonance.h	/^void update_album_art(struct musicobject *mobj, struct con_win *cwin);$/;"	p
+unset_album_art	consonance.h	/^void unset_album_art(struct con_win *cwin);$/;"	p
+shuffle_button_handler	consonance.h	/^void shuffle_button_handler(GtkToggleButton *button, struct con_win *cwin);$/;"	p
+repeat_button_handler	consonance.h	/^void repeat_button_handler(GtkToggleButton *button, struct con_win *cwin);$/;"	p
+play_button_handler	consonance.h	/^void play_button_handler(GtkButton *button, struct con_win *cwin);$/;"	p
+stop_button_handler	consonance.h	/^void stop_button_handler(GtkButton *button, struct con_win *cwin);$/;"	p
+prev_button_handler	consonance.h	/^void prev_button_handler(GtkButton *button, struct con_win *cwin);$/;"	p
+next_button_handler	consonance.h	/^void next_button_handler(GtkButton *button, struct con_win *cwin);$/;"	p
+vol_button_handler	consonance.h	/^void vol_button_handler(GtkScaleButton *button, gdouble value, struct con_win *cwin);$/;"	p
+play_button_toggle_state	consonance.h	/^void play_button_toggle_state(struct con_win *cwin);$/;"	p
+album_art_toggle_state	consonance.h	/^void album_art_toggle_state(struct con_win *cwin);$/;"	p
+resize_album_art_frame	consonance.h	/^void resize_album_art_frame(struct con_win *cwin);$/;"	p
+__non_recur_add	consonance.h	/^void __non_recur_add(gchar *dir_name, gboolean init, struct con_win *cwin);$/;"	p
+__recur_add	consonance.h	/^void __recur_add(gchar *dir_name, struct con_win *cwin);$/;"	p
+update_file_tree	consonance.h	/^void update_file_tree(gchar *new_dir, struct con_win *cwin);$/;"	p
+populate_file_tree	consonance.h	/^void populate_file_tree(const gchar *new_dir, struct con_win *cwin);$/;"	p
+file_tree_row_activated_cb	consonance.h	/^void file_tree_row_activated_cb(GtkTreeView *file_tree,$/;"	p
+file_tree_right_click_cb	consonance.h	/^gboolean file_tree_right_click_cb(GtkWidget *widget,$/;"	p
+file_tree_play	consonance.h	/^void file_tree_play(GtkAction *action, struct con_win *cwin);$/;"	p
+file_tree_enqueue	consonance.h	/^void file_tree_enqueue(GtkAction *action, struct con_win *cwin);$/;"	p
+file_tree_enqueue_recur	consonance.h	/^void file_tree_enqueue_recur(GtkAction *action, struct con_win *cwin);$/;"	p
+file_tree_enqueue_non_recur	consonance.h	/^void file_tree_enqueue_non_recur(GtkAction *action, struct con_win *cwin);$/;"	p
+dnd_file_tree_get	consonance.h	/^void dnd_file_tree_get(GtkWidget *widget,$/;"	p
+browse_mode_switch_page_cb	consonance.h	/^void browse_mode_switch_page_cb(GtkNotebook *notebook,$/;"	p
+file_tree_sort_func	consonance.h	/^gint file_tree_sort_func(GtkTreeModel *model, GtkTreeIter *a,$/;"	p
+new_musicobject_from_file	consonance.h	/^struct musicobject* new_musicobject_from_file(gchar *file);$/;"	p
+new_musicobject_from_db	consonance.h	/^struct musicobject* new_musicobject_from_db(gint location_id, struct con_win *cwin);$/;"	p
+delete_musicobject	consonance.h	/^void delete_musicobject(struct musicobject *mobj);$/;"	p
+test_delete_musicobject	consonance.h	/^void test_delete_musicobject(struct musicobject *mobj, struct con_win *cwin);$/;"	p
+get_wav_info	consonance.h	/^gboolean get_wav_info(gchar *file, struct tags *tags);$/;"	p
+get_mp3_info	consonance.h	/^gboolean get_mp3_info(gchar *file, struct tags *tags);$/;"	p
+get_flac_info	consonance.h	/^gboolean get_flac_info(gchar *file, struct tags *tags);$/;"	p
+get_ogg_info	consonance.h	/^gboolean get_ogg_info(gchar *file, struct tags *tags);$/;"	p
+get_mod_info	consonance.h	/^gboolean get_mod_info(gchar *file, struct tags *tags);$/;"	p
+save_tags_to_file	consonance.h	/^gboolean save_tags_to_file(gchar *file, struct tags *tags,$/;"	p
+tag_update	consonance.h	/^void tag_update(GArray *loc_arr, GArray *file_arr, gint changed, struct tags *ntag,$/;"	p
+tag_edit_dialog	consonance.h	/^gint tag_edit_dialog(struct tags *otag, struct tags *ntag,$/;"	p
+refresh_tag_completion_entries	consonance.h	/^void refresh_tag_completion_entries(struct con_win *cwin);$/;"	p
+library_tree_row_activated_cb	consonance.h	/^void library_tree_row_activated_cb(GtkTreeView *library_tree,$/;"	p
+library_tree_right_click_cb	consonance.h	/^gboolean library_tree_right_click_cb(GtkWidget *widget,$/;"	p
+library_page_right_click_cb	consonance.h	/^gboolean library_page_right_click_cb(GtkWidget *widget,$/;"	p
+dnd_library_tree_get	consonance.h	/^void dnd_library_tree_get(GtkWidget *widget,$/;"	p
+simple_library_search_keyrelease_handler	consonance.h	/^gboolean simple_library_search_keyrelease_handler(GtkWidget *entry,$/;"	p
+cancel_simple_library_search_handler	consonance.h	/^void cancel_simple_library_search_handler(GtkButton *button, struct con_win *cwin);$/;"	p
+clear_library_search	consonance.h	/^void clear_library_search(struct con_win *cwin);$/;"	p
+folder_file_library_tree	consonance.h	/^void folder_file_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+artist_track_library_tree	consonance.h	/^void artist_track_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+album_track_library_tree	consonance.h	/^void album_track_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+genre_track_library_tree	consonance.h	/^void genre_track_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+artist_album_track_library_tree	consonance.h	/^void artist_album_track_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+genre_album_track_library_tree	consonance.h	/^void genre_album_track_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+genre_artist_track_library_tree	consonance.h	/^void genre_artist_track_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+genre_artist_album_track_library_tree	consonance.h	/^void genre_artist_album_track_library_tree(GtkAction *action, struct con_win *cwin);$/;"	p
+library_tree_play	consonance.h	/^void library_tree_play(GtkAction *action, struct con_win *cwin);$/;"	p
+library_tree_enqueue	consonance.h	/^void library_tree_enqueue(GtkAction *action, struct con_win *cwin);$/;"	p
+library_tree_edit_tags	consonance.h	/^void library_tree_edit_tags(GtkAction *action, struct con_win *cwin);$/;"	p
+init_library_view	consonance.h	/^void init_library_view(struct con_win *cwin);$/;"	p
+add_new_artist_db	consonance.h	/^gint add_new_artist_db(gchar *artist, struct con_win *cwin);$/;"	p
+add_new_album_db	consonance.h	/^gint add_new_album_db(gchar *album, struct con_win *cwin);$/;"	p
+add_new_genre_db	consonance.h	/^gint add_new_genre_db(gchar *genre, struct con_win *cwin);$/;"	p
+add_new_year_db	consonance.h	/^gint add_new_year_db(guint year, struct con_win *cwin);$/;"	p
+add_new_location_db	consonance.h	/^gint add_new_location_db(gchar *location, struct con_win *cwin);$/;"	p
+add_track_playlist_db	consonance.h	/^void add_track_playlist_db(gchar *file, gint playlist_id, struct con_win *cwin);$/;"	p
+find_artist_db	consonance.h	/^gint find_artist_db(const gchar *artist, struct con_win *cwin);$/;"	p
+find_album_db	consonance.h	/^gint find_album_db(const gchar *album, struct con_win *cwin);$/;"	p
+find_genre_db	consonance.h	/^gint find_genre_db(const gchar *genre, struct con_win *cwin);$/;"	p
+find_year_db	consonance.h	/^gint find_year_db(gint year, struct con_win *cwin);$/;"	p
+find_location_db	consonance.h	/^gint find_location_db(const gchar *location, struct con_win *cwin);$/;"	p
+find_playlist_db	consonance.h	/^gint find_playlist_db(const gchar *playlist, struct con_win *cwin);$/;"	p
+update_track_db	consonance.h	/^void update_track_db(gint location_id, gint changed,$/;"	p
+add_new_playlist_db	consonance.h	/^gint add_new_playlist_db(const gchar *playlist, struct con_win *cwin);$/;"	p
+get_playlist_names_db	consonance.h	/^gchar** get_playlist_names_db(struct con_win *cwin);$/;"	p
+delete_playlist_db	consonance.h	/^void delete_playlist_db(gchar *playlist, struct con_win *cwin);$/;"	p
+flush_playlist_db	consonance.h	/^void flush_playlist_db(gint playlist_id, struct con_win *cwin);$/;"	p
+flush_db	consonance.h	/^void flush_db(struct con_win *cwin);$/;"	p
+rescan_db	consonance.h	/^void rescan_db(gchar *dir_name, gint no_files, GtkWidget *pbar,$/;"	p
+update_db	consonance.h	/^void update_db(gchar *dir_name, gint no_files, GtkWidget *pbar,$/;"	p
+delete_db	consonance.h	/^void delete_db(gchar *dir_name, gint no_files, GtkWidget *pbar,$/;"	p
+init_dbase_schema	consonance.h	/^gint init_dbase_schema(struct con_win *cwin);$/;"	p
+drop_dbase_schema	consonance.h	/^gint drop_dbase_schema(struct con_win *cwin);$/;"	p
+exec_sqlite_query	consonance.h	/^gboolean exec_sqlite_query(gchar *query, struct con_win *cwin,$/;"	p
+add_playlist_current_playlist	consonance.h	/^void add_playlist_current_playlist(gchar *playlist, struct con_win *cwin);$/;"	p
+playlist_tree_row_activated_cb	consonance.h	/^void playlist_tree_row_activated_cb(GtkTreeView *playlist_tree,$/;"	p
+playlist_tree_right_click_cb	consonance.h	/^gboolean playlist_tree_right_click_cb(GtkWidget *widget,$/;"	p
+playlist_tree_play	consonance.h	/^void playlist_tree_play(GtkAction *action, struct con_win *cwin);$/;"	p
+playlist_tree_enqueue	consonance.h	/^void playlist_tree_enqueue(GtkAction *action, struct con_win *cwin);$/;"	p
+playlist_tree_delete	consonance.h	/^void playlist_tree_delete(GtkAction *action, struct con_win *cwin);$/;"	p
+dnd_playlist_tree_get	consonance.h	/^void dnd_playlist_tree_get(GtkWidget *widget,$/;"	p
+save_playlist	consonance.h	/^void save_playlist(gint playlist_id, gint type, struct con_win *cwin);$/;"	p
+new_playlist	consonance.h	/^void new_playlist(const gchar *playlist, gint type, struct con_win *cwin);$/;"	p
+append_playlist	consonance.h	/^void append_playlist(const gchar *playlist, gint type, struct con_win *cwin);$/;"	p
+init_playlist_view	consonance.h	/^void init_playlist_view(struct con_win *cwin);$/;"	p
+update_current_state	consonance.h	/^void update_current_state(GThread *thread,$/;"	p
+current_playlist_mobj_at_path	consonance.h	/^struct musicobject* current_playlist_mobj_at_path(GtkTreePath *path,$/;"	p
+reset_rand_track_refs	consonance.h	/^void reset_rand_track_refs(GtkTreeRowReference *ref, struct con_win *cwin);$/;"	p
+current_playlist_clear_dirty_all	consonance.h	/^void current_playlist_clear_dirty_all(struct con_win *cwin);$/;"	p
+current_playlist_get_selection	consonance.h	/^GtkTreePath* current_playlist_get_selection(struct con_win *cwin);$/;"	p
+current_playlist_get_next	consonance.h	/^GtkTreePath* current_playlist_get_next(struct con_win *cwin);$/;"	p
+current_playlist_get_prev	consonance.h	/^GtkTreePath* current_playlist_get_prev(struct con_win *cwin);$/;"	p
+init_current_playlist_columns	consonance.h	/^void init_current_playlist_columns(struct con_win *cwin);$/;"	p
+remove_current_playlist	consonance.h	/^void remove_current_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+crop_current_playlist	consonance.h	/^void crop_current_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+edit_tags_current_playlist	consonance.h	/^void edit_tags_current_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+track_properties_current_playlist	consonance.h	/^void track_properties_current_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+clear_current_playlist	consonance.h	/^void clear_current_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+append_current_playlist	consonance.h	/^void append_current_playlist(struct musicobject *mobj, struct con_win *cwin);$/;"	p
+clear_sort_current_playlist	consonance.h	/^void clear_sort_current_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+save_selected_playlist	consonance.h	/^void save_selected_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+save_current_playlist	consonance.h	/^void save_current_playlist(GtkAction *action, struct con_win *cwin);$/;"	p
+play_first_current_playlist	consonance.h	/^void play_first_current_playlist(struct con_win *cwin);$/;"	p
+play_prev_track	consonance.h	/^void play_prev_track(struct con_win *cwin);$/;"	p
+play_next_track	consonance.h	/^void play_next_track(struct con_win *cwin);$/;"	p
+play_track	consonance.h	/^void play_track(struct con_win *cwin);$/;"	p
+pause_resume_track	consonance.h	/^void pause_resume_track(struct con_win *cwin);$/;"	p
+current_playlist_row_activated_cb	consonance.h	/^void current_playlist_row_activated_cb(GtkTreeView *current_playlist,$/;"	p
+current_playlist_right_click_cb	consonance.h	/^gboolean current_playlist_right_click_cb(GtkWidget *widget,$/;"	p
+header_right_click_cb	consonance.h	/^gboolean header_right_click_cb(GtkWidget *widget,$/;"	p
+dnd_current_playlist_drop	consonance.h	/^gboolean dnd_current_playlist_drop(GtkWidget *widget,$/;"	p
+dnd_current_playlist_received	consonance.h	/^void dnd_current_playlist_received(GtkWidget *widget,$/;"	p
+current_playlist_search_compare	consonance.h	/^gboolean current_playlist_search_compare(GtkTreeModel *model,$/;"	p
+save_current_playlist_state	consonance.h	/^void save_current_playlist_state(struct con_win *cwin);$/;"	p
+init_current_playlist_view	consonance.h	/^void init_current_playlist_view(struct con_win *cwin);$/;"	p
+playlist_track_column_change_cb	consonance.h	/^void playlist_track_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_title_column_change_cb	consonance.h	/^void playlist_title_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_artist_column_change_cb	consonance.h	/^void playlist_artist_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_album_column_change_cb	consonance.h	/^void playlist_album_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_genre_column_change_cb	consonance.h	/^void playlist_genre_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_bitrate_column_change_cb	consonance.h	/^void playlist_bitrate_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_year_column_change_cb	consonance.h	/^void playlist_year_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_length_column_change_cb	consonance.h	/^void playlist_length_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+playlist_filename_column_change_cb	consonance.h	/^void playlist_filename_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin);$/;"	p
+compare_track_no	consonance.h	/^gint compare_track_no(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data);$/;"	p
+compare_bitrate	consonance.h	/^gint compare_bitrate(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data);$/;"	p
+compare_year	consonance.h	/^gint compare_year(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data);$/;"	p
+compare_length	consonance.h	/^gint compare_length(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data);$/;"	p
+save_preferences	consonance.h	/^void save_preferences(struct con_win *cwin);$/;"	p
+preferences_dialog	consonance.h	/^void preferences_dialog(struct con_win *cwin);$/;"	p
+free_library_dir	consonance.h	/^void free_library_dir(struct con_win *cwin);$/;"	p
+free_library_add_dir	consonance.h	/^void free_library_add_dir(struct con_win *cwin);$/;"	p
+free_library_delete_dir	consonance.h	/^void free_library_delete_dir(struct con_win *cwin);$/;"	p
+free_playlist_columns	consonance.h	/^void free_playlist_columns(struct con_win *cwin);$/;"	p
+free_library_tree_nodes	consonance.h	/^void free_library_tree_nodes(struct con_win *cwin);$/;"	p
+start_playback	consonance.h	/^GThread* start_playback(struct musicobject *mobj, struct con_win *cwin);$/;"	p
+advance_playback	consonance.h	/^gboolean advance_playback(gpointer data);$/;"	p
+pause_playback	consonance.h	/^void pause_playback(struct con_win *cwin);$/;"	p
+resume_playback	consonance.h	/^void resume_playback(struct con_win *cwin);$/;"	p
+stop_playback	consonance.h	/^void stop_playback(struct con_win *cwin);$/;"	p
+seek_playback	consonance.h	/^void seek_playback(struct con_win *cwin, gint seek_len, gdouble seek_fraction);$/;"	p
+process_thread_command	consonance.h	/^gint process_thread_command(struct con_win *cwin);$/;"	p
+set_alsa_mixer	consonance.h	/^void set_alsa_mixer(struct con_win *cwin, gchar *mixer_elem);$/;"	p
+set_oss_mixer	consonance.h	/^void set_oss_mixer(struct con_win *cwin, gchar *mixer_elem);$/;"	p
+set_soft_mixer	consonance.h	/^void set_soft_mixer(struct con_win *cwin);$/;"	p
+soft_volume_apply	consonance.h	/^void soft_volume_apply(gchar *buffer, gint buflen, struct con_win *cwin);$/;"	p
+open_audio_device	consonance.h	/^gint open_audio_device(gint samplerate, gint channels,$/;"	p
+show_osd	consonance.h	/^void show_osd(struct con_win *cwin);$/;"	p
+status_icon_activate	consonance.h	/^void status_icon_activate(GtkStatusIcon *status_icon, struct con_win *cwin);$/;"	p
+status_icon_tooltip_update	consonance.h	/^void status_icon_tooltip_update(struct con_win *cwin);$/;"	p
+unset_status_icon_tooltip	consonance.h	/^void unset_status_icon_tooltip(struct con_win *cwin);$/;"	p
+status_icon_popup_menu	consonance.h	/^void status_icon_popup_menu(GtkStatusIcon *status_icon,$/;"	p
+systray_play	consonance.h	/^void systray_play(GtkAction *action, struct con_win *cwin);$/;"	p
+systray_stop	consonance.h	/^void systray_stop(GtkAction *action, struct con_win *cwin);$/;"	p
+systray_pause	consonance.h	/^void systray_pause(GtkAction *action, struct con_win *cwin);$/;"	p
+systray_prev	consonance.h	/^void systray_prev(GtkAction *action, struct con_win *cwin);$/;"	p
+systray_next	consonance.h	/^void systray_next(GtkAction *action, struct con_win *cwin);$/;"	p
+systray_quit	consonance.h	/^void systray_quit(GtkAction *action, struct con_win *cwin);$/;"	p
+cmd_version	consonance.h	/^gboolean cmd_version(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_play	consonance.h	/^gboolean cmd_play(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_stop	consonance.h	/^gboolean cmd_stop(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_pause	consonance.h	/^gboolean cmd_pause(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_prev	consonance.h	/^gboolean cmd_prev(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_next	consonance.h	/^gboolean cmd_next(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_inc_volume	consonance.h	/^gboolean cmd_inc_volume(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_dec_volume	consonance.h	/^gboolean cmd_dec_volume(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_show_osd	consonance.h	/^gboolean cmd_show_osd(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_current_state	consonance.h	/^gboolean cmd_current_state(const gchar *opt_name, const gchar *val,$/;"	p
+cmd_add_file	consonance.h	/^gboolean cmd_add_file(const gchar *opt_name, const gchar *val,$/;"	p
+dbus_filter_handler	consonance.h	/^DBusHandlerResult dbus_filter_handler(DBusConnection *conn,$/;"	p
+dbus_send_signal	consonance.h	/^void dbus_send_signal(const gchar *signal, struct con_win *cwin);$/;"	p
+is_hidden_file	consonance.h	/^gboolean is_hidden_file(const gchar *file);$/;"	p
+is_playable_file	consonance.h	/^gboolean is_playable_file(const gchar *file);$/;"	p
+is_base_dir_and_accessible	consonance.h	/^gboolean is_base_dir_and_accessible(gchar *file, struct con_win *cwin);$/;"	p
+is_dir_and_accessible	consonance.h	/^gboolean is_dir_and_accessible(gchar *dir, struct con_win *cwin);$/;"	p
+dir_file_count	consonance.h	/^gint dir_file_count(gchar *dir_name, gint call_recur);$/;"	p
+sanitize_string_sqlite3	consonance.h	/^gchar* sanitize_string_sqlite3(gchar *str);$/;"	p
+get_file_type	consonance.h	/^gint get_file_type(gchar *file);$/;"	p
+is_image_file	consonance.h	/^gboolean is_image_file(gchar *file);$/;"	p
+convert_length_str	consonance.h	/^gchar* convert_length_str(gint length);$/;"	p
+is_present_str_list	consonance.h	/^gboolean is_present_str_list(const gchar *str, GSList *list);$/;"	p
+delete_from_str_list	consonance.h	/^GSList* delete_from_str_list(const gchar *str, GSList *list);$/;"	p
+get_containing_folder	consonance.h	/^gchar* get_containing_folder(gchar *path);$/;"	p
+free_str_list	consonance.h	/^void free_str_list(GSList *list);$/;"	p
+compare_utf8_str	consonance.h	/^gint compare_utf8_str(gchar *str1, gchar *str2);$/;"	p
+validate_album_art_pattern	consonance.h	/^gboolean validate_album_art_pattern(const gchar *pattern);$/;"	p
+is_incompatible_upgrade	consonance.h	/^gboolean is_incompatible_upgrade(struct con_win *cwin);$/;"	p
+create_menu	consonance.h	/^GtkUIManager* create_menu(struct con_win *cwin);$/;"	p
+create_main_region	consonance.h	/^GtkWidget* create_main_region(struct con_win *cwin);$/;"	p
+create_panel	consonance.h	/^GtkWidget* create_panel(struct con_win *cwin);$/;"	p
+create_status_bar	consonance.h	/^GtkWidget* create_status_bar(struct con_win *cwin);$/;"	p
+create_search_bar	consonance.h	/^GtkWidget* create_search_bar(struct con_win *cwin);$/;"	p
+create_status_icon	consonance.h	/^void create_status_icon(struct con_win *cwin);$/;"	p
+exit_gui	consonance.h	/^gboolean exit_gui(GtkWidget *widget, GdkEvent *event, struct con_win *cwin);$/;"	p
+init_dbus	consonance.h	/^gint init_dbus(struct con_win *cwin);$/;"	p
+init_dbus_handlers	consonance.h	/^gint init_dbus_handlers(struct con_win *cwin);$/;"	p
+init_options	consonance.h	/^gint init_options(struct con_win *cwin, int argc, char **argv);$/;"	p
+init_config	consonance.h	/^gint init_config(struct con_win *cwin);$/;"	p
+init_musicdbase	consonance.h	/^gint init_musicdbase(struct con_win *cwin);$/;"	p
+init_audio	consonance.h	/^gint init_audio(struct con_win *cwin);$/;"	p
+init_threads	consonance.h	/^gint init_threads(struct con_win *cwin);$/;"	p
+init_notify	consonance.h	/^gint init_notify(struct con_win *cwin);$/;"	p
+init_state	consonance.h	/^void init_state(struct con_win *cwin);$/;"	p
+init_tag_completion	consonance.h	/^void init_tag_completion(struct con_win *cwin);$/;"	p
+init_gui	consonance.h	/^void init_gui(gint argc, gchar **argv, struct con_win *cwin);$/;"	p
+exit_consonance	consonance.h	/^void exit_consonance(GtkWidget *widget, struct con_win *cwin);$/;"	p
+album_art_pattern_info	pref.c	/^const gchar *album_art_pattern_info = "Patterns should be of the form:\\$/;"	v
+album_art_pattern_helper	pref.c	/^static void album_art_pattern_helper(GtkDialog *parent, struct con_win *cwin)$/;"	f	file:
+pref_dialog_cb	pref.c	/^static void pref_dialog_cb(GtkDialog *dialog, gint response_id,$/;"	f	file:
+library_add_cb	pref.c	/^static void library_add_cb(GtkButton *button, struct con_win *cwin)$/;"	f	file:
+library_remove_cb	pref.c	/^static void library_remove_cb(GtkButton *button, struct con_win *cwin)$/;"	f	file:
+update_preferences	pref.c	/^static void update_preferences(struct con_win *cwin)$/;"	f	file:
+save_preferences	pref.c	/^void save_preferences(struct con_win *cwin)$/;"	f
+preferences_dialog	pref.c	/^void preferences_dialog(struct con_win *cwin)$/;"	f
+signal_search_click	menu.c	/^gulong signal_search_click;$/;"	v
+signal_search_key	menu.c	/^gulong signal_search_key;$/;"	v
+library_dialog	menu.c	/^static GtkWidget *library_dialog;$/;"	v	file:
+license	menu.c	/^static gchar *license = "This program is free software: you can redistribute it and\/or modify\\n\\$/;"	v	file:
+rescan_dialog_delete_cb	menu.c	/^static gboolean rescan_dialog_delete_cb(GtkWidget *widget,$/;"	f	file:
+rescan_dialog_response_cb	menu.c	/^static void rescan_dialog_response_cb(GtkDialog *dialog,$/;"	f	file:
+handle_selected_file	menu.c	/^static void handle_selected_file(gpointer data, gpointer udata)$/;"	f	file:
+lib_progress_bar	menu.c	/^static GtkWidget* lib_progress_bar(struct con_win *cwin, int update)$/;"	f	file:
+open_file_action	menu.c	/^void open_file_action(GtkAction *action, struct con_win *cwin)$/;"	f
+quit_action	menu.c	/^void quit_action(GtkAction *action, struct con_win *cwin)$/;"	f
+expand_all_action	menu.c	/^void expand_all_action(GtkAction *action, struct con_win *cwin)$/;"	f
+collapse_all_action	menu.c	/^void collapse_all_action(GtkAction *action, struct con_win *cwin)$/;"	f
+search_library_action	menu.c	/^void search_library_action(GtkAction *action, struct con_win *cwin)$/;"	f
+search_playlist_action	menu.c	/^void search_playlist_action(GtkAction *action, struct con_win *cwin)$/;"	f
+pref_action	menu.c	/^void pref_action(GtkAction *action, struct con_win *cwin)$/;"	f
+rescan_library_action	menu.c	/^void rescan_library_action(GtkAction *action, struct con_win *cwin)$/;"	f
+update_library_action	menu.c	/^void update_library_action(GtkAction *action, struct con_win *cwin)$/;"	f
+add_all_action	menu.c	/^void add_all_action(GtkAction *action, struct con_win *cwin)$/;"	f
+statistics_action	menu.c	/^void statistics_action(GtkAction *action, struct con_win *cwin)$/;"	f
+about_action	menu.c	/^void about_action(GtkAction *action, struct con_win *cwin)$/;"	f
+form_new_file_tree_pwd	filetree.c	/^static gchar* form_new_file_tree_pwd(const gchar *new_dir, struct con_win *cwin)$/;"	f	file:
+file_tree_add_file	filetree.c	/^static gboolean file_tree_add_file(GtkTreePath *path,$/;"	f	file:
+file_tree_add_recur_row	filetree.c	/^static void file_tree_add_recur_row(GtkTreePath *path, struct con_win *cwin)$/;"	f	file:
+file_tree_add_non_recur_row	filetree.c	/^static void file_tree_add_non_recur_row(GtkTreePath *path, struct con_win *cwin)$/;"	f	file:
+get_filenames	filetree.c	/^static void get_filenames(GtkTreePath *path,$/;"	f	file:
+__non_recur_add	filetree.c	/^void __non_recur_add(gchar *dir_name, gboolean init, struct con_win *cwin)$/;"	f
+__recur_add	filetree.c	/^void __recur_add(gchar *dir_name, struct con_win *cwin)$/;"	f
+file_tree_row_activated_cb	filetree.c	/^void file_tree_row_activated_cb(GtkTreeView *file_tree,$/;"	f
+file_tree_right_click_cb	filetree.c	/^gboolean file_tree_right_click_cb(GtkWidget *widget,$/;"	f
+file_tree_play	filetree.c	/^void file_tree_play(GtkAction *action, struct con_win *cwin)$/;"	f
+file_tree_enqueue	filetree.c	/^void file_tree_enqueue(GtkAction *action, struct con_win *cwin)$/;"	f
+file_tree_enqueue_recur	filetree.c	/^void file_tree_enqueue_recur(GtkAction *action, struct con_win *cwin)$/;"	f
+file_tree_enqueue_non_recur	filetree.c	/^void file_tree_enqueue_non_recur(GtkAction *action, struct con_win *cwin)$/;"	f
+dnd_file_tree_get	filetree.c	/^void dnd_file_tree_get(GtkWidget *widget,$/;"	f
+populate_file_tree	filetree.c	/^void populate_file_tree(const gchar *new_dir, struct con_win *cwin)$/;"	f
+update_file_tree	filetree.c	/^void update_file_tree(gchar *new_dir, struct con_win *cwin)$/;"	f
+file_tree_sort_func	filetree.c	/^gint file_tree_sort_func(GtkTreeModel *model, GtkTreeIter *a,$/;"	f
+browse_mode_switch_page_cb	filetree.c	/^void browse_mode_switch_page_cb(GtkNotebook *notebook,$/;"	f
+get_total_playtime	current_playlist.c	/^static gint get_total_playtime(struct con_win *cwin)$/;"	f	file:
+update_status_bar	current_playlist.c	/^static void update_status_bar(struct con_win *cwin)$/;"	f	file:
+clear_curr_seq_ref	current_playlist.c	/^static void clear_curr_seq_ref(struct con_win *cwin)$/;"	f	file:
+test_clear_curr_seq_ref	current_playlist.c	/^static void test_clear_curr_seq_ref(GtkTreePath *path, struct con_win *cwin)$/;"	f	file:
+is_current_rand_ref	current_playlist.c	/^static gboolean is_current_rand_ref(GtkTreeRowReference *ref, struct con_win *cwin)$/;"	f	file:
+print_track_ref	current_playlist.c	/^static void print_track_ref(GtkTreeRowReference *ref, struct con_win *cwin)$/;"	f	file:
+print_all_rand_track_refs	current_playlist.c	/^static void print_all_rand_track_refs(struct con_win *cwin)$/;"	f	file:
+delete_rand_track_refs	current_playlist.c	/^void delete_rand_track_refs(GtkTreePath *path, struct con_win *cwin)$/;"	f
+get_rand_ref_next	current_playlist.c	/^static GtkTreeRowReference* get_rand_ref_next(GtkTreeRowReference *ref,$/;"	f	file:
+get_rand_ref_prev	current_playlist.c	/^static GtkTreeRowReference* get_rand_ref_prev(GtkTreeRowReference *ref,$/;"	f	file:
+current_playlist_nth_track	current_playlist.c	/^static GtkTreePath* current_playlist_nth_track(gint n, struct con_win *cwin)$/;"	f	file:
+get_next_unplayed_random_track	current_playlist.c	/^static GtkTreePath* get_next_unplayed_random_track(struct con_win *cwin)$/;"	f	file:
+get_next_random_track	current_playlist.c	/^static GtkTreePath* get_next_random_track(struct con_win *cwin)$/;"	f	file:
+get_next_sequential_track	current_playlist.c	/^static GtkTreePath* get_next_sequential_track(struct con_win *cwin)$/;"	f	file:
+get_next_random_ref_track	current_playlist.c	/^static GtkTreePath* get_next_random_ref_track(struct con_win *cwin)$/;"	f	file:
+get_prev_random_track	current_playlist.c	/^static GtkTreePath* get_prev_random_track(struct con_win *cwin)$/;"	f	file:
+get_prev_sequential_track	current_playlist.c	/^static GtkTreePath* get_prev_sequential_track(struct con_win *cwin)$/;"	f	file:
+append_rand_track_refs	current_playlist.c	/^static void append_rand_track_refs(GtkTreeRowReference *ref, struct con_win *cwin)$/;"	f	file:
+clear_rand_track_refs	current_playlist.c	/^static void clear_rand_track_refs(struct con_win *cwin)$/;"	f	file:
+current_playlist_set_dirty_track	current_playlist.c	/^static void current_playlist_set_dirty_track(GtkTreePath *path, struct con_win *cwin)$/;"	f	file:
+compare_playlist_column_name	current_playlist.c	/^static gint compare_playlist_column_name(gconstpointer a, gconstpointer b)$/;"	f	file:
+modify_current_playlist_columns	current_playlist.c	/^static void modify_current_playlist_columns(struct con_win *cwin,$/;"	f	file:
+get_playlist_dialog	current_playlist.c	/^static gchar* get_playlist_dialog(gint *choice, struct con_win *cwin)$/;"	f	file:
+get_playlist_name	current_playlist.c	/^static gchar* get_playlist_name(struct con_win *cwin, gint *choice)$/;"	f	file:
+update_current_state	current_playlist.c	/^void update_current_state(GThread *thread, GtkTreePath *path,$/;"	f
+current_playlist_mobj_at_path	current_playlist.c	/^struct musicobject* current_playlist_mobj_at_path(GtkTreePath *path,$/;"	f
+reset_rand_track_refs	current_playlist.c	/^void reset_rand_track_refs(GtkTreeRowReference *ref, struct con_win *cwin)$/;"	f
+current_playlist_clear_dirty_all	current_playlist.c	/^void current_playlist_clear_dirty_all(struct con_win *cwin)$/;"	f
+current_playlist_get_selection	current_playlist.c	/^GtkTreePath* current_playlist_get_selection(struct con_win *cwin)$/;"	f
+current_playlist_get_next	current_playlist.c	/^GtkTreePath* current_playlist_get_next(struct con_win *cwin)$/;"	f
+current_playlist_get_prev	current_playlist.c	/^GtkTreePath* current_playlist_get_prev(struct con_win *cwin)$/;"	f
+remove_current_playlist	current_playlist.c	/^void remove_current_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+crop_current_playlist	current_playlist.c	/^void crop_current_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+edit_tags_current_playlist	current_playlist.c	/^void edit_tags_current_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+track_properties_current_playlist	current_playlist.c	/^void track_properties_current_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+clear_current_playlist	current_playlist.c	/^void clear_current_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+append_current_playlist	current_playlist.c	/^void append_current_playlist(struct musicobject *mobj, struct con_win *cwin)$/;"	f
+clear_sort_current_playlist	current_playlist.c	/^void clear_sort_current_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+save_selected_playlist	current_playlist.c	/^void save_selected_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+save_current_playlist	current_playlist.c	/^void save_current_playlist(GtkAction *action, struct con_win *cwin)$/;"	f
+play_first_current_playlist	current_playlist.c	/^void play_first_current_playlist(struct con_win *cwin)$/;"	f
+play_prev_track	current_playlist.c	/^void play_prev_track(struct con_win *cwin)$/;"	f
+play_next_track	current_playlist.c	/^void play_next_track(struct con_win *cwin)$/;"	f
+play_track	current_playlist.c	/^void play_track(struct con_win *cwin)$/;"	f
+pause_resume_track	current_playlist.c	/^void pause_resume_track(struct con_win *cwin)$/;"	f
+current_playlist_row_activated_cb	current_playlist.c	/^void current_playlist_row_activated_cb(GtkTreeView *current_playlist,$/;"	f
+current_playlist_right_click_cb	current_playlist.c	/^gboolean current_playlist_right_click_cb(GtkWidget *widget,$/;"	f
+header_right_click_cb	current_playlist.c	/^gboolean header_right_click_cb(GtkWidget *widget,$/;"	f
+dnd_current_playlist_drop	current_playlist.c	/^gboolean dnd_current_playlist_drop(GtkWidget *widget,$/;"	f
+dnd_current_playlist_received	current_playlist.c	/^void dnd_current_playlist_received(GtkWidget *widget,$/;"	f
+current_playlist_search_compare	current_playlist.c	/^gboolean current_playlist_search_compare(GtkTreeModel *model,$/;"	f
+save_current_playlist_state	current_playlist.c	/^void save_current_playlist_state(struct con_win *cwin)$/;"	f
+init_current_playlist_view	current_playlist.c	/^void init_current_playlist_view(struct con_win *cwin)$/;"	f
+init_current_playlist_columns	current_playlist.c	/^void init_current_playlist_columns(struct con_win *cwin)$/;"	f
+playlist_track_column_change_cb	current_playlist.c	/^void playlist_track_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_title_column_change_cb	current_playlist.c	/^void playlist_title_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_artist_column_change_cb	current_playlist.c	/^void playlist_artist_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_album_column_change_cb	current_playlist.c	/^void playlist_album_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_genre_column_change_cb	current_playlist.c	/^void playlist_genre_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_bitrate_column_change_cb	current_playlist.c	/^void playlist_bitrate_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_year_column_change_cb	current_playlist.c	/^void playlist_year_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_length_column_change_cb	current_playlist.c	/^void playlist_length_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+playlist_filename_column_change_cb	current_playlist.c	/^void playlist_filename_column_change_cb(GtkCheckMenuItem *item, struct con_win *cwin)$/;"	f
+compare_track_no	current_playlist.c	/^gint compare_track_no(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data)$/;"	f
+compare_bitrate	current_playlist.c	/^gint compare_bitrate(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data)$/;"	f
+compare_year	current_playlist.c	/^gint compare_year(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data)$/;"	f
+compare_length	current_playlist.c	/^gint compare_length(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer data)$/;"	f
+add_new_track_db	db.c	/^static void add_new_track_db(gint location_id,$/;"	f	file:
+add_entry_db	db.c	/^static void add_entry_db(gchar *file, struct con_win *cwin)$/;"	f	file:
+delete_track_db	db.c	/^static void delete_track_db(gchar *file, struct con_win *cwin)$/;"	f	file:
+add_new_artist_db	db.c	/^gint add_new_artist_db(gchar *artist, struct con_win *cwin)$/;"	f
+add_new_album_db	db.c	/^gint add_new_album_db(gchar *album, struct con_win *cwin)$/;"	f
+add_new_genre_db	db.c	/^gint add_new_genre_db(gchar *genre, struct con_win *cwin)$/;"	f
+add_new_year_db	db.c	/^gint add_new_year_db(guint year, struct con_win *cwin)$/;"	f
+add_new_location_db	db.c	/^gint add_new_location_db(gchar *location, struct con_win *cwin)$/;"	f
+add_track_playlist_db	db.c	/^void add_track_playlist_db(gchar *file, gint playlist_id, struct con_win *cwin)$/;"	f
+find_artist_db	db.c	/^gint find_artist_db(const gchar *artist, struct con_win *cwin)$/;"	f
+find_album_db	db.c	/^gint find_album_db(const gchar *album, struct con_win *cwin)$/;"	f
+find_genre_db	db.c	/^gint find_genre_db(const gchar *genre, struct con_win *cwin)$/;"	f
+find_year_db	db.c	/^gint find_year_db(gint year, struct con_win *cwin)$/;"	f
+find_location_db	db.c	/^gint find_location_db(const gchar *location, struct con_win *cwin)$/;"	f
+find_playlist_db	db.c	/^gint find_playlist_db(const gchar *playlist, struct con_win *cwin)$/;"	f
+update_track_db	db.c	/^void update_track_db(gint location_id, gint changed,$/;"	f
+add_new_playlist_db	db.c	/^gint add_new_playlist_db(const gchar *playlist, struct con_win *cwin)$/;"	f
+get_playlist_names_db	db.c	/^gchar** get_playlist_names_db(struct con_win *cwin)$/;"	f
+delete_playlist_db	db.c	/^void delete_playlist_db(gchar *playlist, struct con_win *cwin)$/;"	f
+flush_playlist_db	db.c	/^void flush_playlist_db(gint playlist_id, struct con_win *cwin)$/;"	f
+flush_db	db.c	/^void flush_db(struct con_win *cwin)$/;"	f
+rescan_db	db.c	/^void rescan_db(gchar *dir_name, gint no_files, GtkWidget *pbar,$/;"	f
+update_db	db.c	/^void update_db(gchar *dir_name, gint no_files, GtkWidget *pbar,$/;"	f
+delete_db	db.c	/^void delete_db(gchar *dir_name, gint no_files, GtkWidget *pbar,$/;"	f
+init_dbase_schema	db.c	/^gint init_dbase_schema(struct con_win *cwin)$/;"	f
+drop_dbase_schema	db.c	/^gint drop_dbase_schema(struct con_win *cwin)$/;"	f
+exec_sqlite_query	db.c	/^gboolean exec_sqlite_query(gchar *query, struct con_win *cwin,$/;"	f
+mime_mpeg	utils.c	/^const gchar *mime_mpeg[] = {"audio\/mpeg", NULL};$/;"	v
+mime_wav	utils.c	/^const gchar *mime_wav[] = {"audio\/x-wav", NULL};$/;"	v
+mime_flac	utils.c	/^const gchar *mime_flac[] = {"audio\/x-flac", NULL};$/;"	v
+mime_ogg	utils.c	/^const gchar *mime_ogg[] = {"audio\/x-vorbis+ogg", "audio\/ogg", "application\/ogg", NULL};$/;"	v
+mime_modplug	utils.c	/^const gchar *mime_modplug[] = {"audio\/x-mod", "audio\/x-xm", NULL};$/;"	v
+mime_image	utils.c	/^const gchar *mime_image[] = {"image\/jpeg", "image\/png", NULL};$/;"	v
+is_hidden_file	utils.c	/^gboolean is_hidden_file(const gchar *file)$/;"	f
+is_playable_file	utils.c	/^gboolean is_playable_file(const gchar *file)$/;"	f
+is_base_dir_and_accessible	utils.c	/^gboolean is_base_dir_and_accessible(gchar *file, struct con_win *cwin)$/;"	f
+is_dir_and_accessible	utils.c	/^gboolean is_dir_and_accessible(gchar *dir, struct con_win *cwin)$/;"	f
+dir_file_count	utils.c	/^gint dir_file_count(gchar *dir_name, gint call_recur)$/;"	f
+no_single_quote	utils.c	/^static gint no_single_quote(gchar *str)$/;"	f	file:
+sanitize_string_sqlite3	utils.c	/^gchar* sanitize_string_sqlite3(gchar *str)$/;"	f
+is_valid_mime	utils.c	/^static gboolean is_valid_mime(gchar *mime, const gchar **mlist)$/;"	f	file:
+get_file_type	utils.c	/^gint get_file_type(gchar *file)$/;"	f
+is_image_file	utils.c	/^gboolean is_image_file(gchar *file)$/;"	f
+convert_length_str	utils.c	/^gchar* convert_length_str(gint length)$/;"	f
+is_present_str_list	utils.c	/^gboolean is_present_str_list(const gchar *str, GSList *list)$/;"	f
+delete_from_str_list	utils.c	/^GSList* delete_from_str_list(const gchar *str, GSList *list)$/;"	f
+get_containing_folder	utils.c	/^gchar* get_containing_folder(gchar *path)$/;"	f
+free_str_list	utils.c	/^void free_str_list(GSList *list)$/;"	f
+compare_utf8_str	utils.c	/^gint compare_utf8_str(gchar *str1, gchar *str2)$/;"	f
+validate_album_art_pattern	utils.c	/^gboolean validate_album_art_pattern(const gchar *pattern)$/;"	f
+is_incompatible_upgrade	utils.c	/^gboolean is_incompatible_upgrade(struct con_win *cwin)$/;"	f
+modplug_settings	playback_modplug.c	/^ModPlug_Settings modplug_settings;$/;"	v
+update_gui	playback_modplug.c	/^static void update_gui(struct con_modplug_decoder *mdec,$/;"	f	file:
+modfile_decode	playback_modplug.c	/^static gint modfile_decode(struct con_modplug_decoder *mdec, struct con_win *cwin)$/;"	f	file:
+play_modplug	playback_modplug.c	/^void play_modplug(struct con_win *cwin)$/;"	f
+find_root_node	librarytree.c	/^static GtkTreePath* find_root_node(gchar *node_data,$/;"	f	file:
+find_child_node	librarytree.c	/^static GtkTreePath* find_child_node(gchar *node_data,$/;"	f	file:
+choose_node_data	librarytree.c	/^static gchar* choose_node_data(gchar *location,$/;"	f	file:
+choose_node_type	librarytree.c	/^static gint choose_node_type(gint level, struct con_win *cwin)$/;"	f	file:
+choose_node_pixbuf	librarytree.c	/^static GdkPixbuf* choose_node_pixbuf(gint level, struct con_win *cwin)$/;"	f	file:
+add_entry_library	librarytree.c	/^static void add_entry_library(gint location_id,$/;"	f	file:
+get_location_ids	librarytree.c	/^static void get_location_ids(GtkTreePath *path,$/;"	f	file:
+add_row_current_playlist	librarytree.c	/^static void add_row_current_playlist(GtkTreePath *path,$/;"	f	file:
+library_tree_row_activated_cb	librarytree.c	/^void library_tree_row_activated_cb(GtkTreeView *library_tree,$/;"	f
+library_tree_right_click_cb	librarytree.c	/^gboolean library_tree_right_click_cb(GtkWidget *widget,$/;"	f
+library_page_right_click_cb	librarytree.c	/^gboolean library_page_right_click_cb(GtkWidget *widget,$/;"	f
+dnd_library_tree_get	librarytree.c	/^void dnd_library_tree_get(GtkWidget *widget,$/;"	f
+set_all_visible	librarytree.c	/^static gboolean set_all_visible(GtkTreeModel *model,$/;"	f	file:
+filter_tree_expand_func	librarytree.c	/^static void filter_tree_expand_func(GtkTreeView *view,$/;"	f	file:
+filter_tree_func	librarytree.c	/^static gboolean filter_tree_func(GtkTreeModel *model,$/;"	f	file:
+simple_library_search_keyrelease_handler	librarytree.c	/^gboolean simple_library_search_keyrelease_handler(GtkWidget *entry,$/;"	f
+cancel_simple_library_search_handler	librarytree.c	/^void cancel_simple_library_search_handler(GtkButton *button, struct con_win *cwin)$/;"	f
+clear_library_search	librarytree.c	/^void clear_library_search(struct con_win *cwin)$/;"	f
+folder_file_library_tree	librarytree.c	/^void folder_file_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+artist_track_library_tree	librarytree.c	/^void artist_track_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+album_track_library_tree	librarytree.c	/^void album_track_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+genre_track_library_tree	librarytree.c	/^void genre_track_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+artist_album_track_library_tree	librarytree.c	/^void artist_album_track_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+genre_album_track_library_tree	librarytree.c	/^void genre_album_track_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+genre_artist_track_library_tree	librarytree.c	/^void genre_artist_track_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+genre_artist_album_track_library_tree	librarytree.c	/^void genre_artist_album_track_library_tree(GtkAction *action, struct con_win *cwin)$/;"	f
+library_tree_play	librarytree.c	/^void library_tree_play(GtkAction *action, struct con_win *cwin)$/;"	f
+library_tree_enqueue	librarytree.c	/^void library_tree_enqueue(GtkAction *action, struct con_win *cwin)$/;"	f
+library_tree_edit_tags	librarytree.c	/^void library_tree_edit_tags(GtkAction *action, struct con_win *cwin)$/;"	f
+init_library_view	librarytree.c	/^void init_library_view(struct con_win *cwin)$/;"	f
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/consonance$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/consonance$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/consonance$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+build_triplet	Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_triplet	Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = consonance$(EXEEXT)$/;"	m
+subdir	Makefile	/^subdir = src$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+binPROGRAMS_INSTALL	Makefile	/^binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+am_consonance_OBJECTS	Makefile	/^am_consonance_OBJECTS = consonance-consonance.$(OBJEXT) \\$/;"	m
+consonance_OBJECTS	Makefile	/^consonance_OBJECTS = $(am_consonance_OBJECTS)$/;"	m
+am__DEPENDENCIES_1	Makefile	/^am__DEPENDENCIES_1 =$/;"	m
+consonance_DEPENDENCIES	Makefile	/^consonance_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \\$/;"	m
+consonance_LINK	Makefile	/^consonance_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+LTCOMPILE	Makefile	/^LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+LINK	Makefile	/^LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \\$/;"	m
+SOURCES	Makefile	/^SOURCES = $(consonance_SOURCES)$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(consonance_SOURCES)$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/d\/Documents\/Projects\/consonance-0.4.1\/missing --run aclocal-1.10$/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/d\/Documents\/Projects\/consonance-0.4.1\/missing --run tar$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/d\/Documents\/Projects\/consonance-0.4.1\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/d\/Documents\/Projects\/consonance-0.4.1\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/d\/Documents\/Projects\/consonance-0.4.1\/missing --run automake-1.10$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/usr\/bin\/grep -E$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+FGREP	Makefile	/^FGREP = \/usr\/bin\/grep -F$/;"	m
+GREP	Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+LD	Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIPO	Makefile	/^LIPO = $/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/d\/Documents\/Projects\/consonance-0.4.1\/missing --run makeinfo$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/usr\/bin\/mkdir -p$/;"	m
+NM	Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	Makefile	/^NMEDIT = $/;"	m
+OBJDUMP	Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OTOOL	Makefile	/^OTOOL = $/;"	m
+OTOOL64	Makefile	/^OTOOL64 = $/;"	m
+PACKAGE	Makefile	/^PACKAGE = consonance$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = m.sacamano@gmail.com$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = consonance$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = consonance 0.4.1$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = consonance$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 0.4.1$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PKG_CONFIG	Makefile	/^PKG_CONFIG = \/usr\/bin\/pkg-config$/;"	m
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+SED	Makefile	/^SED = \/usr\/bin\/sed$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+STRIP	Makefile	/^STRIP = strip$/;"	m
+VERSION	Makefile	/^VERSION = 0.4.1$/;"	m
+abs_builddir	Makefile	/^abs_builddir = \/home\/d\/Documents\/Projects\/consonance-0.4.1\/src$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/d\/Documents\/Projects\/consonance-0.4.1\/src$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/d\/Documents\/Projects\/consonance-0.4.1$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/d\/Documents\/Projects\/consonance-0.4.1$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m
+alsa_CFLAGS	Makefile	/^alsa_CFLAGS = -I\/usr\/include\/alsa$/;"	m
+alsa_LIBS	Makefile	/^alsa_LIBS = -lasound$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+ao_CFLAGS	Makefile	/^ao_CFLAGS = $/;"	m
+ao_LIBS	Makefile	/^ao_LIBS = -lao$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build	Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = unknown$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+dbus_CFLAGS	Makefile	/^dbus_CFLAGS = -I\/usr\/include\/dbus-1.0 -I\/usr\/lib\/dbus-1.0\/include -I\/usr\/include\/glib-2.0 -I\/usr\/lib\/glib-2.0\/include$/;"	m
+dbus_LIBS	Makefile	/^dbus_LIBS = -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+flac_CFLAGS	Makefile	/^flac_CFLAGS = $/;"	m
+flac_LIBS	Makefile	/^flac_LIBS = -lFLAC$/;"	m
+gio_CFLAGS	Makefile	/^gio_CFLAGS = -pthread -I\/usr\/include\/glib-2.0 -I\/usr\/lib\/glib-2.0\/include$/;"	m
+gio_LIBS	Makefile	/^gio_LIBS = -lgio-2.0 -lgobject-2.0 -lglib-2.0$/;"	m
+gthread_CFLAGS	Makefile	/^gthread_CFLAGS = -pthread -I\/usr\/include\/glib-2.0 -I\/usr\/lib\/glib-2.0\/include$/;"	m
+gthread_LIBS	Makefile	/^gthread_LIBS = -lgthread-2.0 -pthread -lglib-2.0$/;"	m
+gtk_CFLAGS	Makefile	/^gtk_CFLAGS = -pthread -I\/usr\/include\/gtk-2.0 -I\/usr\/lib\/gtk-2.0\/include -I\/usr\/include\/pango-1.0 -I\/usr\/include\/atk-1.0 -I\/usr\/include\/cairo -I\/usr\/include\/pixman-1 -I\/usr\/include\/libdrm -I\/usr\/include\/gdk-pixbuf-2.0 -I\/usr\/include\/libpng16 -I\/usr\/include\/pango-1.0 -I\/usr\/include\/freetype2 -I\/usr\/include\/libpng16 -I\/usr\/include\/harfbuzz -I\/usr\/include\/glib-2.0 -I\/usr\/lib\/glib-2.0\/include -I\/usr\/include\/freetype2 -I\/usr\/include\/libpng16 -I\/usr\/include\/harfbuzz -I\/usr\/include\/glib-2.0 -I\/usr\/lib\/glib-2.0\/include$/;"	m
+gtk_LIBS	Makefile	/^gtk_LIBS = -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype$/;"	m
+host	Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_cpu	Makefile	/^host_cpu = x86_64$/;"	m
+host_os	Makefile	/^host_os = linux-gnu$/;"	m
+host_vendor	Makefile	/^host_vendor = unknown$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = $(SHELL) \/home\/d\/Documents\/Projects\/consonance-0.4.1\/install-sh$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libmodplug_CFLAGS	Makefile	/^libmodplug_CFLAGS = $/;"	m
+libmodplug_LIBS	Makefile	/^libmodplug_LIBS = $/;"	m
+libnotify_CFLAGS	Makefile	/^libnotify_CFLAGS = -pthread -I\/usr\/include\/gdk-pixbuf-2.0 -I\/usr\/include\/libpng16 -I\/usr\/include\/glib-2.0 -I\/usr\/lib\/glib-2.0\/include$/;"	m
+libnotify_LIBS	Makefile	/^libnotify_LIBS = -lnotify -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+lt_ECHO	Makefile	/^lt_ECHO = echo$/;"	m
+mad_CFLAGS	Makefile	/^mad_CFLAGS = $/;"	m
+mad_LIBS	Makefile	/^mad_LIBS = -lmad$/;"	m
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = \/usr\/bin\/mkdir -p$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sndfile_CFLAGS	Makefile	/^sndfile_CFLAGS = $/;"	m
+sndfile_LIBS	Makefile	/^sndfile_LIBS = -lsndfile$/;"	m
+sqlite3_CFLAGS	Makefile	/^sqlite3_CFLAGS = $/;"	m
+sqlite3_LIBS	Makefile	/^sqlite3_LIBS = -lsqlite3$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+taglib_CFLAGS	Makefile	/^taglib_CFLAGS = -I\/usr\/include\/taglib$/;"	m
+taglib_LIBS	Makefile	/^taglib_LIBS = -ltag$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+vorbisfile_CFLAGS	Makefile	/^vorbisfile_CFLAGS = $/;"	m
+vorbisfile_LIBS	Makefile	/^vorbisfile_LIBS = -lvorbisfile$/;"	m
+DEFINES	Makefile	/^DEFINES = -DSHAREDIR=\\""$(pkgdatadir)"\\"$/;"	m
+consonance_CFLAGS	Makefile	/^consonance_CFLAGS = $(DEFINES)$/;"	m
+consonance_LDADD	Makefile	/^consonance_LDADD = $(glib_LIBS) \\$/;"	m
+AM_CPPFLAGS	Makefile	/^AM_CPPFLAGS = $(glib_CFLAGS) \\$/;"	m
+consonance_SOURCES	Makefile	/^consonance_SOURCES = consonance.c \\$/;"	m
+audio_backend	init.c	/^static gchar *audio_backend = NULL;$/;"	v	file:
+audio_mixer	init.c	/^static gchar *audio_mixer = NULL;$/;"	v	file:
+cmd_entries	init.c	/^GOptionEntry cmd_entries[] = {$/;"	v
+_init_gui_state	init.c	/^static gboolean _init_gui_state(gpointer data)$/;"	f	file:
+init_audio_mixer	init.c	/^static gint init_audio_mixer(struct con_win *cwin)$/;"	f	file:
+init_dbus	init.c	/^gint init_dbus(struct con_win *cwin)$/;"	f
+init_dbus_handlers	init.c	/^gint init_dbus_handlers(struct con_win *cwin)$/;"	f
+init_options	init.c	/^gint init_options(struct con_win *cwin, int argc, char **argv)$/;"	f
+init_config	init.c	/^gint init_config(struct con_win *cwin)$/;"	f
+init_musicdbase	init.c	/^gint init_musicdbase(struct con_win *cwin)$/;"	f
+init_audio	init.c	/^gint init_audio(struct con_win *cwin)$/;"	f
+init_threads	init.c	/^gint init_threads(struct con_win *cwin)$/;"	f
+init_notify	init.c	/^gint init_notify(struct con_win *cwin)$/;"	f
+init_state	init.c	/^void init_state(struct con_win *cwin)$/;"	f
+init_tag_completion	init.c	/^void init_tag_completion(struct con_win *cwin)$/;"	f
+init_gui	init.c	/^void init_gui(gint argc, gchar **argv, struct con_win *cwin)$/;"	f

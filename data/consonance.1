@@ -1,0 +1,100 @@
+.TH "consonance" "1" "0.4" "sacamano" ""
+.SH "NAME"
+.LP 
+consonance \- A lightweight music manager
+.SH "SYNTAX"
+.LP 
+consonance [OPTION...] [URI1 [URI2...]]
+.SH "DESCRIPTION"
+.LP 
+Consonance is a lightweight music manager that aims to be fast, bloat\-free, and light on memory consumption. It is written completely in C and GTK+. Some of the features are:
+.LP
+.br 
+  * Library management using sqlite3
+.br 
+  * Multiple views
+.br 
+  * OSD support
+.br 
+  * mp3, ogg, flac, and wav support
+.LP 
+Consonance is released under the GNU General Public Licence version 3 (GPLv3).
+
+.SH "OPTIONS"
+.LP 
+.TP 
+\fB\-?, \-\-help\fR
+Output help information and exit.
+.TP 
+\fB\-\-help\-all\fR
+Output all help options and exit.
+.TP 
+\fB\-\-help\-gtk\fR
+Output GTK+ Options and exit.
+.TP 
+\fB\-v, \-\-version\fR
+Output version information and exit.
+.TP 
+\fB\-e, \-\-debug\fR
+Enable Debug.
+.TP 
+\fB\-p, \-\-play\fR
+Play the specified music files.
+.TP 
+\fB\-s, \-\-stop\fR
+Stop playing.
+.TP 
+\fB\-t, \-\-pause\fR
+Pause/Resume the current song.
+.TP 
+\fB\-r, \-\-prev\fR
+Play the previous song in the playlist.               
+.TP 
+\fB\-n, \-\-next\fR
+Play the next song in the playlist. 
+.TP 
+\fB\-i, \-\-inc_vol\fR
+Increase the volume by 1.
+.TP             
+\fB\-d, \-\-dec_vol\fR
+Decrease the volume by 1.
+.TP             
+\fB\-o, \-\-show_osd\fR
+Show OSD notification (a popup window with info about the current song).
+.TP             
+\fB\-c, \-\-current_state\fR
+Get current player state.
+.TP
+\fB\-a, \-\-audio_backend\fR
+Audio backend (valid options: alsa/oss)
+.TP
+\fB\-m, \-\-audio_mixer\fR
+Mixer Element (For ALSA: Master, PCM, etc.., For OSS: /dev/mixer, etc...)
+.TP             
+\fB\-\-display=DISPLAY\fR
+Set the X display to use.
+
+.SH "USAGE"
+.LP 
+* Add a library location in menu Edit \- Preferences.
+.br 
+* Rescan Library from menu Tools.
+.br 
+* Drag & drop songs from the Library or the File tabs to the playlist. Or use the Enqueue button in the contextual menu.
+.br 
+* Click on play button. 
+
+.SH "FILES"
+.TP 
+$HOME/.consonance/condb
+Library database (in sqlite format) 
+.TP 
+$HOME/.consonance/conrc
+personal settings (use the GUI interface for change them, Edit \- Preferences) 
+.SH "AUTHORS"
+.nf 
+Consonance is written by sacamano <m.sacamano@gmail.com>
+Man page is written by Martin Zelaia <martintxo@sindominio.net>
+.SH "SEE ALSO"
+.LP 
+http://consonance.sourceforge.net/
